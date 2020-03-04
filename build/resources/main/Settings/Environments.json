@@ -1,0 +1,39 @@
+{
+  "ENVIRONMENTS": [
+    {
+      "QA": {
+        "name": "QA",
+        "URL": "https://idemo.bspb.ru/",
+        "host" : ""
+      }
+    },
+    {
+      "DEV": {
+        "name": "DEV",
+        "URL": "https://idemo.bspb.ru/",
+        "host" : ""
+      }
+    },
+    {
+      "INT": {
+        "name": "INT",
+        "URL": "https://idemo.bspb.ru/",
+        "host" : ""
+      }
+    },
+    {
+      "PROD": {
+        "name": "PROD",
+        "URL": "https://idemo.bspb.ru/",
+        "host" : ""
+      }
+    },
+    {
+      "DEMO": {
+        "name": "DEMO",
+        "URL": "https://idemo.bspb.ru/",
+        "host" : ""
+      }
+    }
+  ]
+}

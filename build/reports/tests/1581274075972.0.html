@@ -1,0 +1,205 @@
+<html><head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bank Saint-Petersburg</title>
+  <meta name="description" content="BSPB internet-bank for private customers">
+  <meta name="keywords" content="banking,online banking,finance services,cards,accounts,statement">
+  <meta name="build" content="release-2020-02-04-corporate-bugfixes.6">
+  <meta name="revision" content="c60def72c3">
+  <meta name="yandex-verification" content="7adccd2ab371840b">
+  <link rel="icon" type="image/x-icon" href="/public/images/favicon.ico">
+  <link rel="stylesheet" href="/public/gen/lib.css?c60def72c3" media="screen">
+  <link rel="stylesheet" href="/public/gen/auth.css?c60def72c3" media="screen">
+  <link rel="stylesheet" href="/public/fonts/icomoon/style.css?c60def72c3" media="screen">
+  <script async="" src="https://www.google-analytics.com/analytics.js"></script><script src="/public/gen/auth.js?c60def72c3"></script>
+
+
+  
+  
+</head>
+<body>
+  
+
+
+  
+
+<div class="container">
+  <img id="logo" src="/public/images/logo-bspb.svg" alt="Bank Saint-Petersburg">
+
+  <div id="login-container">
+    <span id="alerts-container">
+  
+
+  
+
+  <div class="yearly-identification-warning-container hidden"></div>
+
+  
+
+  
+
+  
+    <div class="alert alert-error">
+      Invalid login credentials (2 attempts left)
+      
+      
+    </div>
+  
+
+  
+  
+  <div id="global-alerts-container">
+    
+
+
+    <script>
+      function removeFieldErrorsFromGlobal(context){
+        var globalErrors = $('#global-alerts-container .alert-error', context);
+        $('form .hasError:visible [name], form .error:visible [name]', context).each(function() {
+          globalErrors.filter("[data-key='" + this.name + "']").remove();
+        });
+        globalErrors.show();
+      }
+
+      
+      
+        $(function() {
+          setTimeout(function(){
+            removeFieldErrorsFromGlobal($('body'));
+          }, 100);
+        });
+      
+    </script>
+  </div>
+
+  
+
+<div id="page-alerts-container">
+  
+</div>
+</span>
+    
+
+  
+  
+
+
+<form action="/auth/login" method="post" id="login-form">
+  
+  <input type="hidden" name="securityToken" value="16812fe0-65db-4a1d-ad35-0028706069b3">
+
+  <div class="form-control">
+    <input name="username" tabindex="1" type="text" placeholder="Username" autocomplete="off" autofocus="" value="demo">
+  </div>
+  <div class="form-control">
+    <input name="password" tabindex="2" type="password" placeholder="Password" autocomplete="off" value="demo">
+    <svg class="eye-icon" viewBox="0 0 24 24">
+      <path d="M12 8c-5 0-11 6-11 6s6 6 11 6 11-6 11-6-6-6-11-6zm0 10c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4z"></path>
+      <circle cx="12" cy="14" r="2"></circle>
+    </svg>
+  </div>
+
+  <div class="login-button-home">
+    <button id="login-button" tabindex="3" class="btn btn-primary">Login</button>
+  </div>
+
+  
+  
+    <div id="reset-password-dialog" class="modal fade" style="display: none" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a class="close" data-dismiss="modal">×</a>
+        <h3>Forgot username or password?</h3>
+      </div>
+      <div class="modal-body" style="text-align: center; margin: 40px 10px;">
+      It is possible to reset the password by calling the customer support number <b style="white-space:nowrap">8 /495/ 228 3838</b> or by visiting one of the banks offices. Use <a href="http://www.bspb.ru/map">search</a> to find the nearest office.
+      </div>
+    </div>
+  </div>
+</div>
+    <a class="chevron" data-toggle="modal" data-target="#reset-password-dialog" style="cursor: pointer;">
+      Regain access
+    </a>
+  
+
+
+  <div class="secondary-links">
+    
+    <a class="chevron locale inline-block" href="/locale/ru">По-русски</a>
+
+    <a class="chevron inline-block" href="https://www.bspb.ru/retail/ibank/" target="_blank">About Internet-bank</a>
+    
+  </div>
+
+</form>
+
+<script>
+  var isInIframe = window.parent !== window;
+  if (isInIframe) window.parent.postMessage('auth:login', '*');
+
+  function LoginForm(e){function n(n){$.get(e.prefetchUrl,{username:n.target.value},function(){$(".disabled-on-submit",o).removeClass("disabled-on-submit")})}e=e||{};var t=this,o="#login-form",a=$("[name=username]",o),s=$("[name=password]",o),u=$(".eye-icon",o);t.init=function(){e.prefetchUrl&&a.on("change",n),u.on("touchstart mousedown",function(){s.attr("type","text")}).on("touchend mouseup mouseleave",function(){s.attr("type","password")})}}
+  new LoginForm({prefetchUrl: 'https:\/\/idemo.bspb.ru\/login\/prefetch'}).init();
+
+  
+    if ('#corporate' == location.hash) {
+      $("#login-container input[name='username']").val('multicustomer');
+      $("#login-container input[name='password']").val('secret');
+    }
+  
+</script>
+
+  </div>
+</div>
+
+
+
+  <div id="security-info">
+    <div class="item"><img src="/public/images/login/recommendation-1.png">
+      <h4>Secure connection</h4>
+      <div class="muted">Always make sure the site is using encryption. Look for a green certificate in the address bar with the Bank Saint Petersburg name.</div>
+    </div>
+    <div class="item"><img src="/public/images/login/recommendation-2.png">
+      <h4>Always log out</h4>
+      <div class="muted">Ending your session will prevent others from hijacking your account.</div>
+    </div>
+    <div class="item"><img src="/public/images/login/recommendation-3.png">
+      <h4>Never share your passwords</h4>
+      <div class="muted">Only use it on this page. The bank will never ask for it via other channels.</div>
+    </div>
+  </div>
+
+  <div id="footer">
+    <div class="copyright">© 1990 – 2020 Bank "Saint-Petersburg" PJSC</div>
+    <div class="license">General license for banking operations #436 from 31.12.2014 issued by Bank of Russia</div>
+  </div>
+
+
+
+
+<script>
+  $(function() {
+    new DoubleClickPreventer().init();
+    new DisableFormBeforeConfirmation().init();
+  })
+</script>
+  
+  
+<script>
+  
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-31858768-3', 'auto');
+
+    
+    
+
+    ga('send', 'pageview');
+  
+  
+</script>
+  
+
+</body></html>

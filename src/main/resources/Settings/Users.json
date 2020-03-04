@@ -1,0 +1,18 @@
+{
+  "USERS": [
+    {
+      "DEMO_USER": {
+        "name": "demo",
+        "login": "demo",
+        "password": "demo"
+      }
+    },
+    {
+      "INVALID_USER": {
+        "name": "invalid",
+        "login": "invalid_login",
+        "password": "invalid_password"
+      }
+    }
+  ]
+}

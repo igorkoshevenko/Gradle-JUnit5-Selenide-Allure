@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - LoginTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>LoginTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/qa.automation.html">qa.automation</a> &gt; LoginTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">4</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">56.946s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Test EX-0001: User enter valid credentials</td>
+<td class="success">testCanLoginWithValidCredentials()</td>
+<td class="success">17.541s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Test EX-0003: User login with valid credentials and enter invalid Otp</td>
+<td class="success">testLoginWitInvalidOtp()</td>
+<td class="success">13.389s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Test EX-0002: User login with invalid credentials</td>
+<td class="success">testLoginWithInvalidCredentials()</td>
+<td class="success">13.041s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Test EX-0004: User restore access</td>
+<td class="success">testRestoreAccess()</td>
+<td class="success">12.975s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>мар. 04, 2020 11:43:54 AM com.codeborne.selenide.impl.WebDriverThreadLocalContainer getAndCheckWebDriver
+INFO: No webdriver is bound to current thread: 14 - let's create a new webdriver
+Starting ChromeDriver 80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}) on port 1446
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1583315039.030][WARNING]: Timed out connecting to Chrome, retrying...
+мар. 04, 2020 11:44:01 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+мар. 04, 2020 11:44:01 AM com.codeborne.selenide.webdriver.BrowserResizer adjustBrowserSize
+INFO: Set browser size to 1366x768
+[1583315043.245][WARNING]: Timed out connecting to Chrome, retrying...
+мар. 04, 2020 11:44:05 AM com.codeborne.selenide.webdriver.WebDriverFactory logBrowserVersion
+INFO: BrowserName=chrome Version=80.0.3987.132 Platform=WINDOWS
+мар. 04, 2020 11:44:05 AM com.codeborne.selenide.webdriver.WebDriverFactory createWebDriver
+INFO: Selenide v. 5.4.1
+мар. 04, 2020 11:44:05 AM com.codeborne.selenide.webdriver.WebDriverFactory logSeleniumInfo
+INFO: Selenium WebDriver v. 3.141.59 build time: 2018-11-14T08:17:03
+мар. 04, 2020 11:44:05 AM com.codeborne.selenide.drivercommands.CreateDriverCommand createDriver
+INFO: Create webdriver in current thread 14: ChromeDriver -&gt; ChromeDriver: chrome on WINDOWS (a061caed54aff9300a5bf701a88a1aee)
+[1583315047.213][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583315047.316][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583315047.424][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583315047.762][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583315047.873][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583315050.078][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583315050.187][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583315050.299][SEVERE]: Timed out receiving message from renderer: 0.100
+мар. 04, 2020 11:44:10 AM com.codeborne.selenide.drivercommands.CloseDriverCommand run
+INFO: Close webdriver: 14 -&gt; ChromeDriver: chrome on WINDOWS (a061caed54aff9300a5bf701a88a1aee)
+мар. 04, 2020 11:44:10 AM com.codeborne.selenide.drivercommands.CloseBrowser run
+INFO: Trying to close the browser ChromeDriver ...
+мар. 04, 2020 11:44:11 AM com.codeborne.selenide.drivercommands.CloseDriverCommand run
+INFO: Closed webdriver 14 in 635 ms
+мар. 04, 2020 11:44:11 AM com.codeborne.selenide.impl.WebDriverThreadLocalContainer getAndCheckWebDriver
+INFO: No webdriver is bound to current thread: 14 - let's create a new webdriver
+Starting ChromeDriver 80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}) on port 41049
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1583315054.729][WARNING]: Timed out connecting to Chrome, retrying...
+мар. 04, 2020 11:44:16 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+мар. 04, 2020 11:44:16 AM com.codeborne.selenide.webdriver.BrowserResizer adjustBrowserSize
+INFO: Set browser size to 1366x768
+[1583315058.820][WARNING]: Timed out connecting to Chrome, retrying...
+мар. 04, 2020 11:44:20 AM com.codeborne.selenide.webdriver.WebDriverFactory logBrowserVersion
+INFO: BrowserName=chrome Version=80.0.3987.132 Platform=WINDOWS
+мар. 04, 2020 11:44:20 AM com.codeborne.selenide.webdriver.WebDriverFactory createWebDriver
+INFO: Selenide v. 5.4.1
+мар. 04, 2020 11:44:20 AM com.codeborne.selenide.webdriver.WebDriverFactory logSeleniumInfo
+INFO: Selenium WebDriver v. 3.141.59 build time: 2018-11-14T08:17:03
+мар. 04, 2020 11:44:20 AM com.codeborne.selenide.drivercommands.CreateDriverCommand createDriver
+INFO: Create webdriver in current thread 14: ChromeDriver -&gt; ChromeDriver: chrome on WINDOWS (327dda45936bb0c8098a26de7ad82b4e)
+[1583315061.708][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583315061.818][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583315062.182][SEVERE]: Timed out receiving message from renderer: 0.100
+мар. 04, 2020 11:44:24 AM com.codeborne.selenide.drivercommands.CloseDriverCommand run
+INFO: Close webdriver: 14 -&gt; ChromeDriver: chrome on WINDOWS (327dda45936bb0c8098a26de7ad82b4e)
+мар. 04, 2020 11:44:24 AM com.codeborne.selenide.drivercommands.CloseBrowser run
+INFO: Trying to close the browser ChromeDriver ...
+мар. 04, 2020 11:44:24 AM com.codeborne.selenide.drivercommands.CloseDriverCommand run
+INFO: Closed webdriver 14 in 671 ms
+мар. 04, 2020 11:44:25 AM com.codeborne.selenide.impl.WebDriverThreadLocalContainer getAndCheckWebDriver
+INFO: No webdriver is bound to current thread: 14 - let's create a new webdriver
+Starting ChromeDriver 80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}) on port 2623
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1583315068.088][WARNING]: Timed out connecting to Chrome, retrying...
+мар. 04, 2020 11:44:30 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+мар. 04, 2020 11:44:30 AM com.codeborne.selenide.webdriver.BrowserResizer adjustBrowserSize
+INFO: Set browser size to 1366x768
+[1583315072.151][WARNING]: Timed out connecting to Chrome, retrying...
+мар. 04, 2020 11:44:34 AM com.codeborne.selenide.webdriver.WebDriverFactory logBrowserVersion
+INFO: BrowserName=chrome Version=80.0.3987.132 Platform=WINDOWS
+мар. 04, 2020 11:44:34 AM com.codeborne.selenide.webdriver.WebDriverFactory createWebDriver
+INFO: Selenide v. 5.4.1
+мар. 04, 2020 11:44:34 AM com.codeborne.selenide.webdriver.WebDriverFactory logSeleniumInfo
+INFO: Selenium WebDriver v. 3.141.59 build time: 2018-11-14T08:17:03
+мар. 04, 2020 11:44:34 AM com.codeborne.selenide.drivercommands.CreateDriverCommand createDriver
+INFO: Create webdriver in current thread 14: ChromeDriver -&gt; ChromeDriver: chrome on WINDOWS (e0ed9e27c9763d49764ff25099af19d9)
+[1583315075.124][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583315075.236][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583315075.346][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583315075.659][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583315075.771][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583315075.876][SEVERE]: Timed out receiving message from renderer: 0.100
+мар. 04, 2020 11:44:36 AM com.codeborne.selenide.drivercommands.CloseDriverCommand run
+INFO: Close webdriver: 14 -&gt; ChromeDriver: chrome on WINDOWS (e0ed9e27c9763d49764ff25099af19d9)
+мар. 04, 2020 11:44:36 AM com.codeborne.selenide.drivercommands.CloseBrowser run
+INFO: Trying to close the browser ChromeDriver ...
+мар. 04, 2020 11:44:37 AM com.codeborne.selenide.drivercommands.CloseDriverCommand run
+INFO: Closed webdriver 14 in 1173 ms
+мар. 04, 2020 11:44:37 AM com.codeborne.selenide.impl.WebDriverThreadLocalContainer getAndCheckWebDriver
+INFO: No webdriver is bound to current thread: 14 - let's create a new webdriver
+Starting ChromeDriver 80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}) on port 30693
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1583315081.050][WARNING]: Timed out connecting to Chrome, retrying...
+мар. 04, 2020 11:44:43 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+мар. 04, 2020 11:44:43 AM com.codeborne.selenide.webdriver.BrowserResizer adjustBrowserSize
+INFO: Set browser size to 1366x768
+[1583315085.145][WARNING]: Timed out connecting to Chrome, retrying...
+мар. 04, 2020 11:44:47 AM com.codeborne.selenide.webdriver.WebDriverFactory logBrowserVersion
+INFO: BrowserName=chrome Version=80.0.3987.132 Platform=WINDOWS
+мар. 04, 2020 11:44:47 AM com.codeborne.selenide.webdriver.WebDriverFactory createWebDriver
+INFO: Selenide v. 5.4.1
+мар. 04, 2020 11:44:47 AM com.codeborne.selenide.webdriver.WebDriverFactory logSeleniumInfo
+INFO: Selenium WebDriver v. 3.141.59 build time: 2018-11-14T08:17:03
+мар. 04, 2020 11:44:47 AM com.codeborne.selenide.drivercommands.CreateDriverCommand createDriver
+INFO: Create webdriver in current thread 14: ChromeDriver -&gt; ChromeDriver: chrome on WINDOWS (279af3ed63a119246d83b13911975b93)
+[1583315088.099][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583315088.211][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583315088.320][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583315088.636][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583315088.747][SEVERE]: Timed out receiving message from renderer: 0.100
+мар. 04, 2020 11:44:50 AM com.codeborne.selenide.drivercommands.CloseDriverCommand run
+INFO: Close webdriver: 14 -&gt; ChromeDriver: chrome on WINDOWS (279af3ed63a119246d83b13911975b93)
+мар. 04, 2020 11:44:50 AM com.codeborne.selenide.drivercommands.CloseBrowser run
+INFO: Trying to close the browser ChromeDriver ...
+мар. 04, 2020 11:44:51 AM com.codeborne.selenide.drivercommands.CloseDriverCommand run
+INFO: Closed webdriver 14 in 644 ms
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.2.1</a> at 4 мар. 2020 г., 11:44:51</p>
+</div>
+</div>
+</body>
+</html>

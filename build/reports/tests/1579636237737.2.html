@@ -1,0 +1,175 @@
+<html><head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Интернет банк - Банк Санкт-Петербург</title>
+  <meta name="description" content="Попробуйте наш интернет-банк! Открытие и закрытие счетов, заказ карт, подача заявки на кредит и оплата любых услуг онлайн">
+  <meta name="keywords" content="интернет банк,личный кабинет,интернет банк бспб,ibspb,бспб интернет">
+  <meta name="build" content="release-2020-01-background-check-service-integration.5">
+  <meta name="revision" content="f8d5faba1f">
+  <meta name="yandex-verification" content="7adccd2ab371840b">
+  <link rel="icon" type="image/x-icon" href="/public/images/favicon.ico">
+  <link rel="stylesheet" href="/public/gen/lib.css?f8d5faba1f" media="screen">
+  <link rel="stylesheet" href="/public/gen/auth.css?f8d5faba1f" media="screen">
+  <link rel="stylesheet" href="/public/fonts/icomoon/style.css?f8d5faba1f" media="screen">
+  <script async="" src="https://www.google-analytics.com/analytics.js"></script><script src="/public/gen/auth.js?f8d5faba1f"></script>
+
+
+  
+  
+</head>
+<body>
+  
+
+
+  
+
+<div class="container">
+  <img id="logo" src="/public/images/logo-bspb-ru.svg" alt="Интернет банк - Банк Санкт-Петербург">
+
+  <div id="login-container">
+    <span id="alerts-container">
+  
+
+  
+
+  <div class="yearly-identification-warning-container hidden"></div>
+
+  
+
+  
+
+  
+
+  
+  
+  <div id="global-alerts-container">
+    
+
+
+  
+      <div class="alert alert-error hidden" data-key="invalidOtpCode" style="display: block;">
+        Неверный код (осталась 1 попытка)
+      </div>
+    
+
+    <script>
+      function removeFieldErrorsFromGlobal(context){
+        var globalErrors = $('#global-alerts-container .alert-error', context);
+        $('form .hasError:visible [name], form .error:visible [name]', context).each(function() {
+          globalErrors.filter("[data-key='" + this.name + "']").remove();
+        });
+        globalErrors.show();
+      }
+
+      
+      
+        $(function() {
+          setTimeout(function(){
+            removeFieldErrorsFromGlobal($('body'));
+          }, 100);
+        });
+      
+    </script>
+  </div>
+
+  
+
+<div id="page-alerts-container">
+  
+</div>
+</span>
+    
+
+<form action="/auth/otp" method="post" accept-charset="UTF-8" enctype="application/x-www-form-urlencoded" id="login-form">
+<input type="hidden" name="authenticityToken" value="39cfd71955bfa56f610ce9077d0624d5dc7d772f">
+<input type="hidden" name="___form_id" value="form:9fe1691a-8a00-4f32-9596-be2b83466ce5">
+
+  <input type="hidden" name="authOptionId" value="SMS:10005">
+
+  <div id="otp-code-text" class="login-form-text m-b-2">
+    На номер <b>*1111</b> был отправлен код подтверждения, введите его для входа
+  </div>
+
+  <div class="form-control">
+    
+      <div class="input-append">
+        <input id="otp-code" class="phone" name="otpCode" type="tel" placeholder="Код" value="0000" maxlength="4" autocomplete="off" autofocus="">
+
+        <div class="resend add-on">
+          <svg class="resend-icon" width="14" height="14" viewBox="0 0 1000 1000">
+            <g><path d="M990,91.5v285.9c0,11.1-4,20.6-12.1,28.7c-8.1,8.1-17.7,12.1-28.7,12.1H663.3c-17.9,0-30.4-8.5-37.7-25.5c-7.2-16.6-4.3-31.3,8.9-44l88-88c-62.9-58.3-137.2-87.4-222.7-87.4c-44.2,0-86.5,8.6-126.7,25.8c-40.2,17.2-75,40.5-104.3,69.9c-29.3,29.3-52.6,64.1-69.9,104.3c-17.2,40.2-25.8,82.4-25.8,126.7c0,44.2,8.6,86.5,25.8,126.7c17.2,40.2,40.5,75,69.9,104.3c29.3,29.3,64.1,52.6,104.3,69.9c40.2,17.2,82.4,25.8,126.7,25.8c50.6,0,98.5-11.1,143.6-33.2s83.2-53.4,114.2-93.8c3-4.3,7.9-6.8,14.7-7.6c6,0,11.3,1.9,16,5.8l87.4,88c3.8,3.4,5.9,7.8,6,13.1s-1.4,10.1-4.8,14.4c-46.4,56.2-102.5,99.7-168.5,130.5C642.7,974.5,573.2,990,500,990c-66.4,0-129.8-13-190.1-38.9c-60.4-25.9-112.5-60.8-156.3-104.6c-43.8-43.8-78.7-95.9-104.6-156.3C23,629.7,10,566.3,10,500s12.9-129.7,38.9-190.1c26-60.4,60.8-112.5,104.6-156.3c43.8-43.8,95.9-78.7,156.3-104.6C370.3,23,433.7,10,500,10c62.5,0,123,11.8,181.5,35.4s110.5,56.9,156,99.8l82.9-82.3c12.3-13.2,27.2-16.2,44.7-8.9c16.6,7.2,24.9,19.8,24.9,37.7V91.5z"></path></g>
+          </svg>
+          <span class="resend-text">Снова через 26 сек</span>
+        </div>
+
+        <script>function LoginSMSResend(e){function n(){s>0?$(".resend-text").text(e.labels.after+" "+s+" "+e.labels.sec):(clearInterval(t),$(".resend-text").text(e.labels.resend),$(".resend").addClass("enabled").on("click",function(){location.href=location.href+"&resend=true"})),s--}var t,s=e.resendInSec;this.init=function(){n(),t=setInterval(n,1e3)}}</script>
+        <script>
+          new LoginSMSResend({resendInSec: 30, labels: {
+            resend: 'Отправить снова',
+            after: 'Снова через',
+            sec: 'сек'
+          }}).init()
+        </script>
+      </div>
+    
+    
+  </div>
+
+  <button id="login-otp-button" class="btn btn-primary">Войти</button>
+
+  
+
+</form>
+  </div>
+</div>
+
+
+
+  <div id="security-info">
+    <div class="item"><img src="/public/images/login/recommendation-1.png">
+      <h4>Безопасное соединение</h4>
+      <div class="muted">Всегда используйте зашифрованное соединение. Убедитесь в том, что сертификат в адресной строке с названием Bank Saint Petersburg зеленого цвета.</div>
+    </div>
+    <div class="item"><img src="/public/images/login/recommendation-2.png">
+      <h4>Всегда выходите из системы</h4>
+      <div class="muted">Выход из системы препятствует доступу других пользователей к вашим счетам.</div>
+    </div>
+    <div class="item"><img src="/public/images/login/recommendation-3.png">
+      <h4>Не сообщайте никому свои пароли</h4>
+      <div class="muted">Пароль вводите только на этой странице. Банк никогда не просит вводить пароль через другие каналы.</div>
+    </div>
+  </div>
+
+  <div id="footer">
+    <div class="copyright">© 1990 – 2020 ПАО «Банк «Санкт-Петербург»</div>
+    <div class="license">Генеральная лицензия Банка России на совершение банковских операций №436 от 31.12.2014</div>
+  </div>
+
+
+
+
+<script>
+  $(function() {
+    new DoubleClickPreventer().init();
+  })
+</script>
+  
+  
+<script>
+  
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-31858768-3', 'auto');
+
+    
+    
+
+    ga('send', 'pageview');
+  
+  
+</script>
+  
+
+</body></html>

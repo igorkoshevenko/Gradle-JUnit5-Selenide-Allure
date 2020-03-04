@@ -1,0 +1,73 @@
+{
+  "summary" : {
+    "reportName" : "Allure Report",
+    "testRuns" : [ ],
+    "statistic" : {
+      "failed" : 3,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 4
+    },
+    "time" : {
+      "start" : 1579635165202,
+      "stop" : 1579635234226,
+      "duration" : 69024,
+      "minDuration" : 16519,
+      "maxDuration" : 17954,
+      "sumDuration" : 68784
+    }
+  },
+  "environment" : [ ],
+  "suites" : {
+    "total" : 1,
+    "items" : [ {
+      "uid" : "2c9c5e2bafceac651d8d8cbcc06330e2",
+      "name" : "qa.automation.QaAutomationTest",
+      "statistic" : {
+        "failed" : 3,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 1,
+        "unknown" : 0,
+        "total" : 4
+      }
+    } ]
+  },
+  "history-trend" : [ {
+    "statistic" : {
+      "failed" : 3,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 4
+    }
+  } ],
+  "behaviors" : {
+    "total" : 4,
+    "items" : [ ]
+  },
+  "executors" : [ {
+    "name" : "Gradle",
+    "type" : "gradle",
+    "buildName" : "root project 'qa_automation'"
+  } ],
+  "categories" : {
+    "total" : 1,
+    "items" : [ {
+      "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d",
+      "name" : "Product defects",
+      "statistic" : {
+        "failed" : 3,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 3
+      }
+    } ]
+  },
+  "launches" : [ ]
+}

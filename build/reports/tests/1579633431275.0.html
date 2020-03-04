@@ -1,0 +1,1983 @@
+<html lang="ru" class="demo "><head>
+  <meta charset="UTF-8">
+  <title>Старт -  Интернет банк - Банк Санкт-Петербург</title>
+  <meta name="description" content="Попробуйте наш интернет-банк! Открытие и закрытие счетов, заказ карт, подача заявки на кредит и оплата любых услуг онлайн">
+  <meta name="keywords" content="интернет банк,личный кабинет,интернет банк бспб,ibspb,бспб интернет">
+  <meta name="build" content="release-2020-01-background-check-service-integration.5">
+
+  <link rel="icon" type="image/x-icon" href="/public/images/favicon.ico">
+  <meta name="format-detection" content="telephone=no">
+
+  
+  
+  <link rel="stylesheet" type="text/css" media="screen" href="https://idemo.bspb.ru/public/gen/lib.css?f8d5faba1f">
+  <link rel="stylesheet" type="text/css" media="screen" href="https://idemo.bspb.ru/public/gen/main.css?f8d5faba1f">
+  <link rel="stylesheet" type="text/css" href="/public/fonts/icomoon/style.css?f8d5faba1f" media="screen">
+  <link rel="stylesheet" type="text/css" href="/public/stylesheets/print.css?f8d5faba1f" media="print">
+
+  
+
+  
+  <script async="" src="https://www.google-analytics.com/analytics.js"></script><script src="/public/gen/vendor.js?f8d5faba1f"></script>
+  <script src="/public/gen/main.js?f8d5faba1f"></script>
+
+
+  
+  <script>function i18n(n){var r=MESSAGES[n];return r||console.error("i18n() is used with key: "+n),r||n}</script>
+<script>
+  window.MESSAGES = {"Delete":"Удалить","validation.amountExceedsIntrabankDailyLimit":"Вы исчерпали установленный вами дневной лимит на переводы внутри Банка. Попробуйте совершить перевод завтра или обратитесь в офис Банка, чтобы снять это ограничение.","validation.future":"Дата должна быть в будущем","validation.inFutureNotAllowed":"Дата не может быть в будущем","validation.email":"Неверный e-mail","validation.partialRepayment.canNotBeInPast":"Вы можете указать дату начиная со следующего дня","validation.invalidRussianPhone":"Российский номер должен начинаться на 7 и содержать 11 цифр","validation.internationalPayment.remitterInRublesNotAllowed":"Перевод с конверсией с рублёвого счёта невозможен","validation.invalidSMSCode":"Введён неверный SMS-код.","validation.newCustomerNotSyncedBetweenBackends":"Операция на данный момент невозможна. Повторите попытку позже.","validation.exchange.currenciesMustDiffer":"Валюты выбранных счетов должны отличаться","validation.amountWithDecimals":"Сумма не должна содержать копеек.","validation.cantPayToLoanAccount":"Нельзя совершить перевод на ссудный счёт","validation.notEnoughFunds":"Недостаточно средств на счёте","validation.notInPast":"Дата не может быть в прошлом","validation.cardNumbersShouldDiffer":"Номера карт должны отличаться","validation.loanRepaymentNotAllowedFrom":"Перевод на счёт досрочного погашения с этого счёта невозможен. Используйте связанный карточный счёт","validation.bankLicenseIsRevoked":"Обращаем внимание, что у данного банка отозвана лицензия","validation.recurrentEndDateLimit":"Конечная дата регулярного перевода не должна превышать год.","validation.besp.onlyRub":"Только для рублёвых счетов","validation.incorrectName":"Неверное имя владельца счёта","validation.otherBankPayroll.sameBankBic":"Это БИК Банка \"Санкт-Петербург\". Если счёт получателя открыт в Банке \"Санкт-Петербург\", то заключите договор Зарплатного проекта или воспользуйтесь функционалом в рамках действующего договора \u003ca href\u003d\"/payrolls\"\u003eЗарплатного проекта\u003c/a\u003e.","validation.unknownRemitter":"Неизвестный номер счёта плательщика.","validation.range":"Величина должна быть от %2$d до %3$d","validation.usernameFormat":"Неверный формат логина!","validation.paymentNotAllowedTo":"Перевод на этот счёт невозможен","validation.min":"Величина должна быть не меньше %2$d","validation.VCKP.meterDuplicateFound":"Указаны два прибора учета с одинаковым номером","validation.missingCurrencyOperationCode":"В назначении перевода должен содержаться вид операции.","validation.fileTooLarge":"Приложенные файлы должны быть не больше 2 Мб","validation.cardCustomDesignCode":"Неверный формат кода дизайна (XXXXXXXX-XXXX)","confirmDialog.yes":"Да","validation.besp.notAvailableWhenRestrictedRemitter":"Ускоренный перевод недоступен. Возможная причина: есть действующие ограничения по счёту. Для получения подробной информации Вы можете обратиться в обслуживающее подразделение банка.","validation.amountExceedsInternationalDailyLimit":"Превышает дневной лимит %s на валютный перевод.","confirmDialog.no":"Нет","validation.vckp.counterNameAndMeteringError":"Названия счётчиков и их показания должны быть заполнены полностью","validation.amountExceedsDailyLimitIncludingCurrencyConversions":"Недостаточно средств на счёте для проведения операции, так как есть конверсионные операции находящиеся в обработке","validation.partialRepayment.greaterThanLoanAmount":"Максимальная сумма досрочного погашения не может быть равна или больше остатка задолженности","validation.taxPayment.beneficiaryAccount":"Номер счёта получателя должен начинаться с 40101","validation.minSize":"Минимальная длина должна быть %2$s символ(а/ов)","validation.dateAfter":"Дата должна быть после %s","validation.max":"Величина не должна превышать %2$d","validation.forbiddenFileExtension":"Разрешено прикреплять только файлы %s","validation.besp.beneficiaryBankIsOwnBank":"Проведение внутрибанковских платежей по системе перспективных платежных сервисов недоступно","validation.besp.beneficiaryBankNotInBespCatalog":"Банк получателя не является участником системы перспективных платежных сервисов","validation.otherBankCardNotYetEnabled":"Функция подключения карты другого банка будет доступна для вас, начиная с завтрашнего дня","validation.invalidEmail":"Неверный формат электронной почты","validation.invalidFeeAccount":"В качестве счетов списания и комиссии должны быть выбраны счета одной организации","validation.payment.disabledInDemo":"В демо-версии переводы не разрешены","validation.statementLastDate.tooDistantFuture":"Конец периода не может быть в далёком будущем","validation.taxPayment.remitterVatinOrCodeRequired":"При отсутствии ИНН необходимо указать в поле «Код» уникальный идентификатор начисления (УИН)","validation.taxStatusForbidsRemitterKpp":"При выбранном статусе налогоплательщика КПП может быть только \"0\"","validation.invalidBeneficiaryAccountCurrency":"Перевод возможен только на счёт в рублях","validation.besp.notAvailableForBudgetBeneficiary":"Не доступен для бюждетных получателей","validation.mobileLoanApplication.amount":"Введите положительную сумму","validation.VCKP.fineCannotBeNegative":"Пеня не может иметь отрицательное значение","validation.urgentNotAllowedForAccount":"К сожалению, отправка срочного перевода для выбранного счёта не предусмотрена.","validation.minInclusive":"Величина должна быть не меньше %2$d","validation.loanFullRepaymentImpossible":"Полное досрочное погашение по данному кредиту на данный момент невозможно","validation.referenceNumber":"Неверный УИН","validation.oneC.personalPaymentBetweenDifferentCurrencies":"Невозможно выполнить перевод между счетами с разными валютами","validation.paymentInForeignCurrencyOnlyInOwnBank":"Валютное поручение может быть отправлено только на счёт, открытый в ПАО «Банк «Санкт-Петербург» или его филиале","validation.amountExceedsDailyLimit":"Превышает дневной лимит %s.","validation.VCKP.invalidCounterpartyAccount":"Неверный лицевой счёт","validation.taxPayment.remitterVatinOrTaxDocNumberRequired":"ИНН плательщика или Документ (108) должен быть заполнен","validation.invalidOtherBankBIC":"БИК другого банка должен отличатся от БИК Банка «Санкт-Петербург».","validation.onlyLatinAllowed":"Используйте только латинские буквы","validation.taxStatusNeeds10DigitVatin":"При выбранном статусе налогоплательщика ИНН может быть только 10 знаков","validation.invalidCvvFormat":"Код CVV должен состоять из 3 цифр.","validation.3dsecurePasswordFormat":"Пароль должен быть длиной 4-16 символов, содержать буквы и/или цифры, но не другие символы","validation.missingVAT":"Укажите способ начисления НДС","validation.onlyCyrillicAllowed":"Используйте только русские буквы","validation.statement.sub.criterion.count":"Количество критериев по каждому полю поиска ограничено","validation.VATIN.invalidLength":"ИНН данного получателя должен содержать 10 знаков","validation.partialRepayment.oneApplicationInSingleDateAllowed":"Вы уже подали заявление на выбранную дату","validation.duplicatePhone":"Этот номер уже добавлен","validation.passwordsDiffer":"Введены разные пароли","validation.alreadyExists":"Уже существует","validation.loan.unknownServiceAccount":"Обслуживающий счёт не найден","validation.invalidCharacter":"Недопустимый символ %2$s","validation.remitterAccountClosed":"Счёт плательщика закрыт.","validation.partialRepayment.earlyPartialRepaymentNotAllowedForThisLoan":"Частичное досрочное погашение не разрешается для этого кредита","validation.paymentEndDateLimit":"Конечная дата перевода не должна превышать год.","validation.nonGovernmentBeneficiary":"Получателем должен быть государственный орган","validation.attachment.required":"Не выбран файл. Вложение обязательно","validation.object":"Не все поля заполнены корректно!","validation.invalidBeneficiaryAccountOrCard":"По введённому номеру счёта или карты клиент не найден","validation.invalidSWIFT":"Неверный SWIFT-код банка","validation.card.invalidHolderName":"Не совпадает с настоящим именем %2$s","validation.paymentCorrection.atLeastOneOf":"Должно быть заполнено хотя бы одно из полей – Получатель, Счёт получателя или Назначение","validation.taxStatusNeeds9DigitRemitterKpp":"При выбранном статусе налогоплательщика КПП может быть только 9 знаков","validation.forbiddenFileExtension.filesRemoved":"Разрешено прикреплять только файлы %s.\u003cbr/\u003eСледующие файлы были удалены: %s","validation.sameUsername":"Логин совпадает с текущим","validation.invalidPaymentPeriod":"Неверное значение","validation.budgetPayment.beneficiaryAccount":"Номер счёта получателя не соответствует платежу в бюджет","validation.beneficiaryAccountClosed":"Счёт получателя закрыт.","validation.past":"Дата должна быть не позднее %2$s","validation.samePasswordNotAllowed":"Новый пароль должен отличаться от старого","validation.loan.invalidServiceAccountCurrency":"Неверный обслуживающий счёт. Валюта счёта отличается от валюты кредита.","validation.urgentNotAllowedForCurrency":"К сожалению, отправка срочного перевода в %2$s не предусмотрена.","validation.invalidBIC":"Неверный код банка (БИК)","validation.notEnoughFundsForCorporateDeposit":"Денежных средств не достаточно для пополнения депозитного счёта","validation.wrongCurrentPassword":"Неверный текущий пароль","validation.amountExceedsLimit":"%1$s превышает доступный лимит на %2$s","validation.notEnoughFundsWithDetails":"Недостаточно средств для перевода. С учётом комиссии сумма на счёте должна быть не менее %2$s.\u003cbr\u003eКомиссия за перевод составляет %3$s","validation.mobileLoanApplication.period":"Введите период в месяцах","validation.warning.dailySmsLimitExceeded":"Обращаем ваше внимание, что дневной лимит подписания платежей по SMS - %s.\u003cbr/\u003eПри необходимости совершить платеж(и) на большую сумму используйте токен","validation.usernameExists":"Логин занят","Attachment":"Прикрепить файл","validation.internationalPayment.detailsWereCleared":"Поле \"Назначение\" было очищено, так как совпадало с указанной целью перевода.","validation.invalid.kpp":"Неверный КПП","validation.payment.unknownCurrencyOperationCode":"Неизвестный код валютной операции","validation.excessVAT":"В назначении платежа задублирована информация об НДС","validation.accountDoesNotBelongToCustomer":"Счёт не соответствует организации","validation.otherBankPayroll.accountNotSuitableForSalary":"Счёт не подходит для выплаты зарплаты","validation.payment.fromCardToCard.pendingOtherBankCard":"Чтобы перевести деньги с этой карты, её необходимо \u003ca href\u003d\"/cards\"\u003eактивировать\u003c/a\u003e","validation.otherBankPayroll.accountNotSuitableForPayingSalary":"Счёт не принадлежит клиенту или не подходит для выплаты зарплаты","validation.recurrentDayOfMonth":"Число месяца должно быть от 1 до %2$s","validation.invalidBccForPrivateTax":"Введенный КБК не относится к налоговым платежам. Оплату следует проводить через вкладку \u003ca href\u003d\"/payments/budget\"\u003eПлатежи в бюджет\u003c/a\u003e.","validation.mustAcceptTerms":"Условия должны быть приняты","validation.taxStatusNeeds12DigitVatin":"При выбранном статусе налогоплательщика ИНН может быть только 12 знаков","validation.cashWithdrawal.invalidCashWithdrawalDate":"Ближайшая дата изъятия: %2$s","validation.statement.criterion.count":"Количество полей для поиска ограничено","validation.cardOrder.noBranchFound":"Офис выдачи не найден","validation.currencyExchange.ticketExpired":"Курс обмена устарел. Повторите операцию заново.","validation.loan.isNotWorkingDay":"Дата погашения выпадет на выходной или праздничный день.","validation.nonUrgentNotAllowed":"Несрочный платёж недопустим","validation.payment.disabledPeriod":"Ближайшая возможная дата платежа %1$s. Перевод будет отправлен на обработку в Банк %2$s. Исправьте дату и повторите попытку","validation.invalidBeneficiaryAccountNumber":"По введённому номеру счёта, карты или телефона клиент не найден","validation.required":"Обязательное поле","validation.invalidAccountNumber":"Неверная комбинация номера счёта и БИК.","validation.invalidNonIbanAccountNumber":"Неверный номер счёта","validation.urgentNotAllowedAfterTime":"К сожалению, вы не можете отправить срочный перевод после %2$s.","validation.statementLastDate.beforeFirstDate":"Конец периода не может быть раньше начала периода","validation.maxSize":"Максимальная длина должна быть %2$s символ(а/ов)","validation.invalidPhone":"Номер должен начинаться с кода страны (для России - 7) и содержать минимум 10 цифр","validation.VCKP.customerIdRequired":"Введите номер лицевого счёта, чтобы запросить список счётчиков","validation.details.maxSize.warning":"Количество символов в назначении платежа превышает допустимые %1$s символов. Исправьте назначение платежа вручную","validation.amount":"Цифры, не более двух цифр после запятой","validation.patternNotSatisfied":"Значение не соответствует формату \u0027%2$s\u0027","validation.vckp.metersPrefillError":"Из-за технической ошибки не удалось заполнить счётчики","validation.amountExceedsLoanAmount":"%1$s превышает выделенную сумму кредита в %2$s","validation.statement.from.amount.greater":"Конечная сумма периода должна быть больше, чем начальная","validation.notEnoughOwnFunds":"Недостаточно собственных средств на счёте, будут использованы кредитные средства. Кредитная ставка может превышать ставку вклада","validation.amountTooLow":"сумма должна быть больше %2$s","validation.VCKP.fineCannotBeGreaterThanAmount":"Сумма пени не может превышать сумму платежа","validation.otherBankPayroll.dateLimitInFuture":"Дата не должна превышать год","validation.loan.invalidServiceAccount":"Неверный обслуживающий счёт. Счёт не может содержать кредитную линию.","validation.paymentNotAllowedFrom":"Перевод с этого счёта невозможен","validation.notification.threshold":"Величина должна быть не меньше","validation.invalid":"Неверное значение","validation.inFutureAllowed":"Дата должна быть в будущем","validation.VATIN":"Неверный ИНН","validation.cardOrder.noOtherCustomerFound":"По данным реквизитам не удалось однозначно определить клиента. Обратитесь в офис, пожалуйста.","validation.invalidBccForNonTaxBeneficiaryAccount":"Код КБК, начинающийся с 1821, может быть использован только для налоговых платежей.","validation.domestic.vatNoteInDescriptionIsMissing":"Отсутствует информация по НДС","validation.ibanFormatRequired":"Должен быть в формате IBAN","validation.cardOrder.organizationNameAllowedSymbols":"Используйте только разрешённые символы — буквы латинского алфавита, цифры и знаки %2$s","validation.invalidFormat":"Значение не соответствует формату","validation.greater":"Величина должна быть больше %2$d","validation.vendorPayment.notAllowed":"Оплата этой услуги картой другого банка запрещена.","validation.yearList":"Один год или список годов через запятую от %2$d до %3$d","validation.cardNumbersMustDiffer":"Номера карт должны различаться","validation.cashWithdrawal.minimumAmount":"Сумма снятия должна быть больше 0","validation.required.kpp":"Обязательное поле КПП","validation.amountTooHigh":"сумма должна быть меньше %2$s","validation.bccEqualsReferenceNumber":"КБК и код должны различаться","validation.sameAccount":"Счета плательщика и получателя не могут совпадать","confirmDialog.areYouSure?":"Вы уверены?","validation.card.accountBalanceIsSmallerThanCommission":"Доступные средства на счёте меньше комиссии","validation.invalidUIP":"Неверное значение УИП","validation.paymentDetailsTooLong":"Назначение перевода после добавления служебной информации не может превышать %2$s символов, вам нужно убрать: %3$s","validation.dailyLimitExceeded":"Превышен дневной лимит подписания платежей в %s. Способ подтверждения: %s.","validation.partialRepayment.canNotBeGreaterThanLoanEndDate":"Дата не может превышать дату окончания кредита","validation.invalidDate":"Неправильная дата","validation.genericDocumentError":"Невалидный документ","validation.differentCurrencies":"Невозможно выполнить перевод между счетами с разными валютами","validation.accountDoesNotExist":"Неверный номер счёта","validation.VCKP.illegalPeriod":"Неверный период. Формат должен быть вида ММ-ГГГГ, где месяц должен быть в пределах 01, 02, 03, ..., 12","validation.statementDateRange.isNull":"Необходимо задать период","validation.passwordFormat":"Неверный формат пароля!","validation.invalidBcc":"Неверный формат КБК, код должен состоять из 20 цифр.","validation.loan.invalidPartialRepaymentDate":"Дата частичного досрочного погашения не должна предшествовать дате первого платежа по кредиту (%1$s).","validation.nonBudgetBeneficiary":"Получателем должен быть государственный орган, организация в государственной собственности, либо негосударственная некоммерческая организация","validation.besp.notAvailableForRemitter":"Проведение ускоренных платежей со специальных счетов или счёта таможенной карты недоступно","validation.accountTargetDoesNotMatch":"Целевое назначение счёта не соответствует требуемому","validation.statementFirstDate.tooSmall":"Минимально разрешенное значение даты начала выписки %s","validation.localCurrencyRequired":"Одна из валют должна быть рубли!","validation.card.notOwnBankCardNumber":"Карта выдана другим банком — перевод невозможен."}
+</script>
+  
+<script>
+  
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-31858768-3', 'auto');
+
+    
+      ga('set', 'userId', '10002');
+    
+    
+
+    ga('send', 'pageview');
+  
+  
+</script>
+
+
+
+
+
+  
+  
+</head>
+
+<body class="logged-in demo">
+
+
+
+
+
+
+
+<div class="ui-loader hidden">
+  <div class="ui-icon-loading"></div>
+  <div class="with-progress hidden">
+    <div class="description"></div>
+    <div class="progress progress-danger">
+      <div class="bar"></div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<script>
+  $.fn.selectpicker.language = 'ru';
+  
+    
+    $.fn.selectpicker.defaults = $.extend($.fn.selectpicker.defaults, {
+      noneSelectedText: 'Ничего не выбрано',
+      noneResultsText: 'Не найдено совпадений',
+      countSelectedText: 'Выбрано {0} из {1}',
+      maxOptionsText: ['Достигнут предел ({n} {var} максимум)', 'Достигнут предел в группе ({n} {var} максимум)', ['items', 'item']]
+    });
+  
+  $(function() {
+    $('.selectpicker').selectpicker({showContent: false, liveSearch: true});
+  });
+</script>
+<script>
+  $.fn.datepicker.options = {startDate:'21.01.2020', format:'dd.mm.yyyy', weekStart: 1, language: 'ru', autoclose:true};
+  $(function() {
+    var dateLength = 'dd.mm.yyyy'.length;
+
+    $('.datepicker-input')
+      .on('changeDate', function() {
+        $(this).removeClass('placeholder');
+      })
+      .each(function(i, input) {
+        new SmartInputMask(input, SmartMask.DATE).init();
+
+        input = $(input);
+        if (!input.attr('maxlength')) {
+          input.attr('maxlength', dateLength);
+        }
+      });
+  });
+</script>
+
+<div id="outer-wrapper">
+  <div id="inner-wrapper">
+
+    <div id="header">
+      <div class="content clearfix">
+        <a id="logo" href="/start">
+  <img src="/public/images/logo-bspb-ru.png" alt="Интернет банк - Банк Санкт-Петербург" class="print-only">
+  <img src="/public/images/logo-bspb-ru.svg" alt="Интернет банк - Банк Санкт-Петербург" class="print-hidden">
+</a>
+<div class="environment print-hidden">
+  Интернет-банк
+  
+</div>
+        <div id="controls">
+          
+
+  <div id="user" class="nav-user">
+    <a id="user-avatar" href="/settings">
+      <img title="Аватар" src="/public/images/avatars/1.png">
+    </a>
+
+    <span class="name-holder multiple-representees ">
+      
+        <div id="user-greeting">Hello World!</div>
+      
+
+      
+
+      <div id="representee-name" class="print-only">
+        Королёва Ольга
+      </div>
+
+      
+  <script>
+    $(function() {
+      $('select[name="representee-list"]').change(function() {
+        location = '/representee?customerRef=' + $('#representee-list option:selected').val();
+      });
+      
+        $('.bootstrap-select-searchbox').hide();
+      
+
+      $('#representee-list button').attr('title', "Выберите клиента (физическое или юридическое лицо), которого хотите представлять");
+    });
+  </script>
+
+  <div id="representee-list">
+    
+
+<select name="representee-list" size="1" class="selectpicker hidden representee-name representee-private" style="display: none;">
+  
+      
+        <option value="1" class="representee representee-private" selected="">Королёва Ольга</option>
+      
+        <option value="CORP:6" class="representee representee-corporate">ОАО "Коудборн"</option>
+      
+        <option value="CORP:7" class="representee representee-corporate">ИП "Морозов Павел Изяславович"</option>
+      
+    
+  
+  
+</select><div class="btn-group bootstrap-select hidden representee-name representee-private"><button type="button" class="btn dropdown-toggle selectpicker btn-default" data-toggle="dropdown" title="Выберите клиента (физическое или юридическое лицо), которого хотите представлять"><span class="filter-option pull-left">Королёва Ольга</span>&nbsp;<span class="caret"></span></button><div class="dropdown-menu open"><div class="bootstrap-select-searchbox" style="display: none;"><input type="text" class="input-block-level form-control"></div><ul class="dropdown-menu inner selectpicker" role="menu"><li rel="0" class="selected"><a tabindex="0" class="representee representee-private" style=""><span class="text">Королёва Ольга</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li><li rel="1"><a tabindex="0" class="representee representee-corporate" style=""><span class="text">ОАО "Коудборн"</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li><li rel="2"><a tabindex="0" class="representee representee-corporate" style=""><span class="text">ИП "Морозов Павел Изяславович"</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li></ul></div></div>
+  </div>
+
+
+      
+        <div id="loyalty-programs">
+          
+            <div class="yarko balance">
+              <a href="/loyaltyprogram/main">500.87 ЯРКО</a>
+            </div>
+          
+
+          <div class="travel balance">
+            <a href="/loyaltyprogram/travel">
+              300.00 TRAVEL
+            </a>
+          </div>
+        </div>
+      
+    </span>
+
+    <span id="preference-controls" class="clearfix">
+      
+
+      <script>
+        $(function() {
+          if (window.countBadges === undefined)
+            window.countBadges = new CountBadges(5000);
+          window.countBadges.updateMessages('.nav-user');
+          window.countBadges.updateOffers('.nav-user');
+        });
+      </script>
+
+      <a id="messages-button" class="nav-item print-hidden messages" title="Переписка с банком" href="/messages">
+        <span class="icon-email"></span>
+      <span class="badge">5</span></a>
+
+      <a id="offers-button" class="nav-item offers" title="" href="/offers" data-original-title="Персональные предложения"><span class="icon-candy"></span><span class="badge">13</span></a><div class="popover fade bottom in one-time-hint" style="top: 42px; left: -22.8594px; display: block;"><div class="arrow"></div><h3 class="popover-title">Персональные предложения</h3><div class="popover-content">Вам есть персональное предложение<button id="HINT_Offers-hasPersonalOffers" class="btn btn-primary btn-small gotit">Ясно</button></div></div>
+      <a id="contact-button" class="nav-item" title="Контакты банка" href="javascript:showAjaxDialog('/application/contacts')"><span class="icon-phone"></span></a>
+      <a id="settings-button" class="nav-item" title="Настройки" href="/settings"><span class="icon-cog"></span></a>
+    </span>
+
+    
+      
+  <script>var OneTimeHint=function(e){function t(){if(!$(".btn.gotit").length){var t=e.key.replace(/\./g,"-"),o=e.message+'<button id="'+t+'" class="btn btn-primary btn-small gotit">'+e.buttonLabel+"</button>";i.popover=$(e.target).popover({animation:!0,placement:e.placement,trigger:"manual",content:o,html:!0}).popover("show"),i.popover.next().addClass("one-time-hint"),$("#"+t+".btn.gotit").on("click",n)}}function n(){i.popover.popover("hide"),$.post("/hints/hide",{key:e.key,authenticityToken:e.authenticityToken})}var i=this;window.OneTimeHintDeferred||(window.OneTimeHintDeferred=$.when()),this.init=function(){var n=window.OneTimeHintDeferred,i=window.OneTimeHintDeferred=$.Deferred();n.then(function(){$.getJSON("/hints/show",{key:e.key},function(e){e&&setTimeout(t,1e3),i.resolve()})})}};</script>
+  <script>
+    $(function() {
+      if (window.welcomeTour && window.welcomeTour.startedOnPageLoad) return;
+      new OneTimeHint({
+        target: '#offers-button',
+        key: 'HINT_Offers.hasPersonalOffers',
+        message: 'Вам есть персональное предложение',
+        buttonLabel: 'Ясно',
+        placement: 'bottom',
+        authenticityToken: '6d4f14f8c737dcac1f9674ea9fc498119682c7fc'
+      }).init();
+    });
+  </script>
+
+    
+
+    <a id="logout-button" class="nav-item" title="Выйти" href="/auth/logout?client_id=1&amp;redirect_uri=https://idemo.bspb.ru/logout">
+      <span class="icon-close"></span>
+    </a>
+  </div>
+
+  
+
+  <script>
+  var timeoutWatcher = new (function() {
+    var self = this;
+    var sessionExpiration = 1500000;
+    var timeoutLabels = [];  timeoutLabels[0] = 'Ваш сеанс будет завершён через 1 минуту'; timeoutLabels[1] = 'Ваш сеанс будет завершён через 1 минуту'; timeoutLabels[2] = 'Ваш сеанс будет завершён через 2 минуты'; timeoutLabels[3] = 'Ваш сеанс будет завершён через 3 минуты'; timeoutLabels[4] = 'Ваш сеанс будет завершён через 4 минуты'; timeoutLabels[5] = 'Ваш сеанс будет завершён через 5 минут';
+    var timeoutWatcherInterval = 60000;
+    var timeoutWatcherTime = sessionExpiration - 5 * timeoutWatcherInterval;
+    var timeout, interval;
+
+    self.continueSession = function() {
+      $.get('/ping');
+      $('#timeout-warning').modal('hide');
+      self.resetTimeout();
+    };
+
+    function showSessionTimeoutModal() {
+      var counter = Math.round((sessionExpiration - timeoutWatcherTime) / 60000);
+      $('.modal:visible').modal('hide');
+      $('#timeout-warning .modal-header h3').text(timeoutLabels[counter]);
+      $('#timeout-warning').modal({show: true});
+
+      interval = setInterval(function() {
+        $('#timeout-warning .modal-header h3').text(timeoutLabels[--counter]);
+        if (counter <= 0) {
+          clearInterval(interval);
+          location.href = '/logout';
+        }
+      }, timeoutWatcherInterval);
+    }
+
+    self.testActivate = function(updateInterval) {
+      if (updateInterval) timeoutWatcherInterval = updateInterval;
+      showSessionTimeoutModal();
+    };
+
+    self.resetTimeout = function() {
+      clearInterval(interval);
+      clearTimeout(timeout);
+      timeout = setTimeout(showSessionTimeoutModal, timeoutWatcherTime, timeoutWatcherTime);
+    };
+
+    self.init = function() {
+      $(document).ajaxSuccess(self.resetTimeout);
+      self.resetTimeout();
+    }
+  })();
+
+  $(function() {
+    timeoutWatcher.init();
+  });
+</script>
+
+<div id="timeout-warning" class="modal hide" tabindex="-1">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal">×</button>
+    <h3>&nbsp;</h3>
+  </div>
+  <div class="modal-body">
+    <p>Желаете ли вы продолжить работу в интернет-банке?</p>
+  </div>
+  <div class="modal-footer">
+    <a class="btn" href="/logout">Выйти</a>
+    <button class="btn btn-primary" onclick="timeoutWatcher.continueSession()">Продолжить</button>
+  </div>
+</div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div id="body" class="section-welcome action-welcome-index branch-">
+      
+        <script>function Menu(){"use strict";function n(){$("#feedback-popup").show()}this.init=function(){$(".navbar").on("mouseenter",function(){$("select:focus").blur()}),$(".show-feedback-popup").on("click",n)}}</script>
+<script>
+  $(function() {
+    new Menu().init();
+  });
+</script>
+
+<div class="navbar navbar-main">
+  <div class="navbar-inner">
+    
+
+
+<ul class="navigation-menu nav">
+  
+    
+    <li id="overview" class="section-bank">
+      
+      
+        <a id="bank-overview" href="/overview">Обзор</a>
+      
+    </li>
+  
+    
+    <li id="accounts" class="section-accounts dropdown">
+      
+        
+        
+          <a id="accounts-index" class="dropdown-toggle" href="/accounts">Счета</a>
+          
+
+
+<ul class="navigation-menu dropdown-menu">
+  
+    
+    <li id="statement" class="section-statements">
+      
+      
+        <a id="statements-statement" href="/statement">Выписка</a>
+      
+    </li>
+  
+    
+    <li id="accountIndex" class="section-accounts">
+      
+      
+        <a id="accounts-index" href="/accounts">Текущие</a>
+      
+    </li>
+  
+</ul>
+
+        
+      
+      
+    </li>
+  
+    
+    <li id="payments" class="section-payments">
+      
+      
+        <a id="payments-form" href="/payments/form">Платежи и Переводы</a>
+      
+    </li>
+  
+    
+    <li id="cards" class="section-cards">
+      
+      
+        <a id="cards-overview-index" href="/cards">Карты</a>
+      
+    </li>
+  
+    
+    <li id="deposits" class="section-deposits">
+      
+      
+        <a id="deposits-index" href="/deposits">Вклады</a>
+      
+    </li>
+  
+    
+    <li id="loans" class="section-loans">
+      
+      
+        <a id="loans-index" href="/loans">Кредиты</a>
+      
+    </li>
+  
+    
+    <li id="externalTraderoom" class="section-externaltraderoom">
+      
+      
+        <a id="externaltraderoom-index" href="/currency/traderoom">Валюта</a>
+      
+    </li>
+  
+    
+    <li id="insurance" class="section-insurance dropdown">
+      
+        
+        
+          <a id="insurance-travel" class="dropdown-toggle" href="/insurance/travel">Страхование</a>
+          
+
+
+<ul class="navigation-menu dropdown-menu">
+  
+    
+    <li id="vehicleInsurance" class="section-insurance">
+      
+      
+        <a id="insurance-vehicle" href="/insurance/vehicle">Страхование автомобиля</a>
+      
+    </li>
+  
+    
+    <li id="travelInsurance" class="section-insurance">
+      
+      
+        <a id="insurance-travel" href="/insurance/travel">Страхование путешественников</a>
+      
+    </li>
+  
+    
+    <li id="lifeInsurance" class="section-insurance">
+      
+      
+        <a id="insurance-life" href="/insurance/life">Страхование жизни, здоровья и спорта</a>
+      
+    </li>
+  
+    
+    <li id="flightInsurance" class="section-insurance">
+      
+      
+        <a id="insurance-flight" href="/insurance/flight">Защита от задержки или отмены рейса</a>
+      
+    </li>
+  
+    
+    <li id="estateInsurance" class="section-insurance">
+      
+      
+        <a id="insurance-estate" href="/insurance/estate">Страхование недвижимости</a>
+      
+    </li>
+  
+    
+    <li id="pensionInsurance" class="section-insurance">
+      
+      
+        <a id="insurance-pension" href="/insurance/pension">Пенсионное обеспечение</a>
+      
+    </li>
+  
+</ul>
+
+        
+      
+      
+    </li>
+  
+</ul>
+
+    <ul class="navigation-menu nav faq help-menu">
+      <li class="dropdown">
+        <a class="dropdown-toggle secondary-link" data-toggle="dropdown" id="faq-link" href="#">?</a>
+        <ul class="navigation-menu dropdown-menu">
+          <li><a href="/faq/select" title="Часто задаваемые вопросы">FAQ</a></li>
+          <li class="restart-welcome-tour" style=""><a href="javascript:restartWelcomeTour();">Визуальный помощник</a></li>
+          
+            <li class="show-feedback-popup" data-ga-event="feedback"><a href="#">Обратная связь</a></li>
+          
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+      
+
+      <div id="contentbar" class="content welcome-index">
+        
+
+        
+
+        
+          <span id="alerts-container">
+  
+
+  
+    <div class="alert alert-success">
+      Последний вход 21.01.2020 22:02 | Dnepropetrovsk (<a href="/settings#last-logins">История входов</a>).
+      
+    </div>
+  
+
+  <div class="yearly-identification-warning-container hidden"></div>
+
+  
+
+  
+
+  
+
+  
+  
+  <div id="global-alerts-container">
+    
+
+
+    <script>
+      function removeFieldErrorsFromGlobal(context){
+        var globalErrors = $('#global-alerts-container .alert-error', context);
+        $('form .hasError:visible [name], form .error:visible [name]', context).each(function() {
+          globalErrors.filter("[data-key='" + this.name + "']").remove();
+        });
+        globalErrors.show();
+      }
+
+      
+      
+        $(function() {
+          setTimeout(function(){
+            removeFieldErrorsFromGlobal($('body'));
+          }, 100);
+        });
+      
+    </script>
+  </div>
+
+  
+
+<div id="page-alerts-container">
+  
+</div>
+</span>
+        
+
+        
+
+<script>
+  $(function () {
+    setTimeout(function () {
+      $('#welcome-page-alerts').load('/alerts', function () {
+        $('#welcome-page-alerts').fadeIn();
+      });
+    }, 0);
+  });
+</script>
+
+
+
+
+
+<div id="welcome-page-alerts" class="hidden" style="display: block;">
+  <div class="alert alert-warning">
+    
+      
+      <ul>
+        <li><a id="unpaid-tax-charges" href="/payments/dashboard">По данным из Государственной информационной системы, у вас 2 неоплаченных налога.</a><br></li><li><a id="unpaid-traffic-charges" href="/payments/dashboard">По данным из Государственной информационной системы, у вас 2 неоплаченных штрафа.</a><br></li>
+      </ul>
+    
+    
+  </div>
+</div>
+
+<script src="/public/javascripts/tours/tour.js?f8d5faba1f"></script>
+<script src="/public/javascripts/tours/welcome-tour.js?f8d5faba1f"></script>
+<script>
+  function restartWelcomeTour() {
+    var tourStillActive = $('.welcome-tour:visible').length;
+    if(tourStillActive) return;
+    welcomeTour = tour(welcomeTourSteps);
+    welcomeTour.init();
+    welcomeTour.start(true);
+  }
+
+  function showHelpMenuTour() {
+    helperTour.init();
+    helperTour._options.steps = [];
+    helperTour.addSteps(
+      [
+        {
+          backdropPadding: 5,
+          backdropContainer: ".navbar-inner",
+          element: ".help-menu",
+          title: "Визуальный помощник",
+          content: 'К туру по данной странице можно будет всегда вернуться, выбрав пункт меню "Визуальный помощник"',
+          onShown: function (tour) {
+            var left = parseInt($(".help-menu").offset().left) - 400;
+            $(".welcome-tour").css("top", "165px").css("left", left);
+            $(".welcome-tour-arrow").addClass("right");
+            $('#welcome-tour-skip').hide();
+            $('#welcome-tour-next').hide();
+            $('#welcome-tour-end').show();
+          }
+        }
+      ]
+    );
+    helperTour.start(true);
+  }
+
+  
+</script>
+
+<div class="clearfix offers not-refused-offers">
+  
+    
+  
+  
+  
+    <div id="offer-absd-efgh" style="background-image: url('/public/images/default-banner.png');" class="offer loan-offer loan-offer-approved">
+      <div class="offer-actions">
+        <a class="offer-action" href="/loan-offer/absd-efgh" data-ga-event="pre-approved-loan" data-ga-action="start">
+          <object type="nested/links">
+            <span class="offer-text">Зарплатный потребительский кредит (предодобренный)</span>
+          </object>
+        </a>
+        
+          <a class="decline" data-ga-event="pre-approved-loan" data-ga-action="not-now" href="/offers/decline/absd-efgh">✕</a>
+        
+      </div>
+    </div>
+  
+
+  
+    
+  
+  
+  
+    <div id="offer-questionnaire-banner-message" style="background-image: url('/public/images/default-banner.png');" class="offer ">
+      <div class="offer-actions">
+        <a class="offer-action" href="/marketing/questionnaire/1001" data-ga-event="" data-ga-action="start">
+          <object type="nested/links">
+            <span class="offer-text">Нам важно знать ваше мнение!</span>
+          </object>
+        </a>
+        
+          <a class="decline" data-ga-event="" data-ga-action="not-now" href="/offers/decline/questionnaire-banner-message">✕</a>
+        
+      </div>
+    </div>
+  
+
+  
+    
+  
+  
+  
+    <div id="offer-galojan" style="background-image: url('/public/images/default-banner.png');" class="offer loan-offer loan-offer-approved">
+      <div class="offer-actions">
+        <a class="offer-action" href="/loan-offer/galojan" data-ga-event="pre-approved-loan" data-ga-action="start">
+          <object type="nested/links">
+            <span class="offer-text">Лёгкая покупка (предодобренный)</span>
+          </object>
+        </a>
+        
+          <a class="decline" data-ga-event="pre-approved-loan" data-ga-action="not-now" href="/offers/decline/galojan">✕</a>
+        
+      </div>
+    </div>
+  
+
+  
+    
+  
+  
+  
+    <div id="offer-requires-credit-agency-check" style="background-image: url('/public/images/default-banner.png');" class="offer loan-offer loan-offer-requires_inspection">
+      <div class="offer-actions">
+        <a class="offer-action" href="/loan-offer/requires-credit-agency-check" data-ga-event="pre-approved-loan" data-ga-action="start">
+          <object type="nested/links">
+            <span class="offer-text">Лёгкая покупка (предодобренный с проверкой)</span>
+          </object>
+        </a>
+        
+          <a class="decline" data-ga-event="pre-approved-loan" data-ga-action="not-now" href="/offers/decline/requires-credit-agency-check">✕</a>
+        
+      </div>
+    </div>
+  
+
+  
+    
+  
+  
+  
+    <div id="offer-multi_platform_loan_banner" style="background-image: url('/page/image/payment-promo-capaign-ozon.png');" class="offer loan-offer loan-offer-approved">
+      <div class="offer-actions">
+        <a class="offer-action" href="/loan-offer/multi_platform_loan_banner" data-ga-event="pre-approved-loan" data-ga-action="start">
+          <object type="nested/links">
+            <span class="offer-text">Оформляй кредит где удобно! В интернет-банке для тех кто предпочитает надежность!</span>
+          </object>
+        </a>
+        
+          <a class="decline" data-ga-event="pre-approved-loan" data-ga-action="not-now" href="/offers/decline/multi_platform_loan_banner">✕</a>
+        
+      </div>
+    </div>
+  
+
+  
+    
+  
+  
+  
+    <div id="offer-desktop_loan_banner" style="background-image: url('/page/image/payment-promo-capaign-ozon.png');" class="offer loan-offer loan-offer-approved">
+      <div class="offer-actions">
+        <a class="offer-action" href="/loan-offer/desktop_loan_banner" data-ga-event="pre-approved-loan" data-ga-action="start">
+          <object type="nested/links">
+            <span class="offer-text">Только в интернет-банке и только сейчас! Супер выгодный кредит!</span>
+          </object>
+        </a>
+        
+          <a class="decline" data-ga-event="pre-approved-loan" data-ga-action="not-now" href="/offers/decline/desktop_loan_banner">✕</a>
+        
+      </div>
+    </div>
+  
+
+  
+    
+  
+  
+  
+    <div id="offer-with-min-amount" style="background-image: url('/public/images/default-banner.png');" class="offer loan-offer loan-offer-approved">
+      <div class="offer-actions">
+        <a class="offer-action" href="/loan-offer/with-min-amount" data-ga-event="pre-approved-loan" data-ga-action="start">
+          <object type="nested/links">
+            <span class="offer-text">Лёгкая покупка (с возможностью менять сумму)</span>
+          </object>
+        </a>
+        
+          <a class="decline" data-ga-event="pre-approved-loan" data-ga-action="not-now" href="/offers/decline/with-min-amount">✕</a>
+        
+      </div>
+    </div>
+  
+
+  
+    
+  
+  
+    <div id="offer-banner-deposit" class="offer banner" style="background-image: url('/public/images/default-banner.png');">
+  <a class="offer-action" href="http://www.google.com" target="&quot;_blank&quot;">
+    <object type="nested/links">
+      <span class="offer-text">Предлагаем оформить вклад прямо в ИБ!</span>
+    </object>
+  </a>
+  
+    <a class="decline" data-ga-event="" data-ga-action="not-now" href="/offers/decline/banner-deposit">✕</a>
+  
+</div>
+  
+  
+
+  
+    
+  
+  
+    <div id="offer-banner-message" class="offer banner" style="background-image: url('/public/images/default-banner.png');">
+  <a class="offer-action" href="/messages/form">
+    <object type="nested/links">
+      <span class="offer-text">Напишите нам!</span>
+    </object>
+  </a>
+  
+    <a class="decline" data-ga-event="" data-ga-action="not-now" href="/offers/decline/banner-message">✕</a>
+  
+</div>
+  
+  
+
+  
+    
+  
+  
+    <div id="offer-banner-message" class="offer banner" style="background-image: url('/public/images/default-banner.png');">
+  <a class="offer-action" href="/messages/form">
+    <object type="nested/links">
+      <span class="offer-text"><div align="left" style="margin:-10px 0px 0px 235px; "> <font size="5" face="Calibri" color="#000000">Встречайте Apple Pay в «Санкт-Петербурге»</font><br> <font size="4" face="Calibri" color="696969">Удобный и легкий способ оплаты. <a href="/faq" class="nested-link">Подключайтесь!</a></font></div> <img src="/public/images/alert.png" align="right" style="margin:-65px 0px 0px 0px; "></span>
+    </object>
+  </a>
+  
+    <a class="decline" data-ga-event="" data-ga-action="not-now" href="/offers/decline/banner-message">✕</a>
+  
+</div>
+  
+  
+
+  
+    
+  
+  
+  
+    <div id="offer-cred-card-offer" style="background-image: url('/public/images/default-banner.png');" class="offer loan-offer loan-offer-approved">
+      <div class="offer-actions">
+        <a class="offer-action" href="/loan-offer/cred-card-offer" data-ga-event="credit-card-offer" data-ga-action="start">
+          <object type="nested/links">
+            <span class="offer-text">Предлагаем заказать кредитную карту!</span>
+          </object>
+        </a>
+        
+          <a class="decline" data-ga-event="credit-card-offer" data-ga-action="not-now" href="/offers/decline/cred-card-offer">✕</a>
+        
+      </div>
+    </div>
+  
+
+  
+</div>
+
+  <a id="show-all-offers" href="/offers">Посмотреть все персональные предложения</a>
+
+
+
+
+  
+
+
+<script>
+var smartPayment = new (function(){
+  var pub = this;
+
+  pub.goto = function(url) {
+    location.href = url;
+  };
+
+  pub.gotoPersonal = function(beneficiary) {
+    var params = {remitterId: $('[name="payment.remitterId"]').val()}
+    if (beneficiary) params.beneficiaryId = beneficiary.ownAccountId;
+    pub.goto('/payments/personalPrefilled?' + $.param(params));
+  };
+
+  pub.gotoVendorService = function(beneficiary) {
+    pub.goto(function(options) {var pattern = '/vendors/:vendorId/:serviceId'; for(key in options) { pattern = pattern.replace(':'+key, options[key]); } return pattern }(beneficiary));
+  };
+
+  pub.gotoTax = function() {
+    var payment = {remitterId:$('[name="payment.remitterId"]').val(), beneficiary:$('[name=suggestQuery]').val(), createNewRecurrent:$('input[name=createNewRecurrent]').val() === "true"};
+    pub.goto(function(options) {var pattern = '/payments/taxprefilled?remitterId=:remitterId&beneficiary=:beneficiary&createNewRecurrent=:createNewRecurrent'; for(key in options) { pattern = pattern.replace(':'+key, options[key]); } return pattern }(payment));
+  };
+
+  pub.showNewBeneficiaryOption = function(name) {
+    if (!name || typeof name != 'string') name = encodeURIComponent($('[name=suggestQuery]').val());
+    return [{name:'Новый получатель', url:'/payments/domestic?prefill=' + name}];
+  };
+
+  pub.formatPaymentSuggestion = function(item) {
+    var formatted = '';
+    if (item.name) {
+      var parts = escapeHTML(item.name).split(/: /g);
+      if (parts[0]) parts[0] = '<span class="beneficiary-name">'  + parts[0] + '</span>';
+      if (parts[1]) parts[1] = '<span class="comment">'  + parts[1] + '</span>';
+      formatted = parts.join('<br>');
+      formatted = '<div>' + formatted + '</div>';
+    }
+    else if (item.ownerName) {
+      formatted = escapeHTML(item.ownerName);
+    }
+
+    if (item.imageUrl) {
+      var url = window.app ? app.processUrl(item.imageUrl) : item.imageUrl;
+      formatted = '<img src="' + url + '"> ' + formatted;
+    }
+
+    if (item.source) {
+      formatted = "<div class='"+ item.source + "'>" + formatted + "</div>";
+    }
+    return formatted;
+  };
+
+  pub.onAutocompleteResultSelected = function(event, beneficiary) {
+    event.stopImmediatePropagation();
+    if (beneficiary.url) {
+      redirecting = true;
+      ga('send', 'event', 'smartPayment', beneficiary.url.split('?')[0]);
+      pub.goto(beneficiary.url);
+    }
+    else if (beneficiary.paymentId) {
+      redirecting = true;
+      ga('send', 'event', 'smartPayment', 'suggestExistingPayment');
+      pub.goto('/payments/copy?paymentId=' + beneficiary.paymentId);
+    }
+    else if (beneficiary.ownAccountId) {
+      redirecting = true;
+      ga('send', 'event', 'smartPayment', 'suggestOwnAccount');
+      pub.gotoPersonal(beneficiary);
+    }
+    else if (beneficiary.vendorId) {
+      redirecting = true;
+      ga('send', 'event', 'smartPayment', 'suggestVendorService');
+      pub.gotoVendorService(beneficiary);
+    }
+    else {
+      ga('send', 'event', 'smartPayment', beneficiary.source ? 'suggest-' + beneficiary.source.split(':')[0] : 'suggestData');
+      pub.gotoOtherBeneficiary(beneficiary);
+    }
+  };
+
+  pub.gotoOtherBeneficiary = function(beneficiary) {
+    var payment = {
+      beneficiaryAccount: encodeURIComponent(beneficiary.accountNumber || ''),
+      beneficiaryName: encodeURIComponent(beneficiary.ownerName || ''),
+      beneficiaryBank: encodeURIComponent(beneficiary.bankName || ''),
+      beneficiaryBIC: encodeURIComponent(beneficiary.bic || ''),
+      vatin: encodeURIComponent(beneficiary.vatin || ''),
+      kpp: encodeURIComponent(beneficiary.kpp || ''),
+      source: encodeURIComponent(beneficiary.source || '')
+    };
+    pub.goto(function(options) {var pattern = '/payments/domesticPrefilled?beneficiaryBank=:beneficiaryBank&vatin=:vatin&beneficiaryBIC=:beneficiaryBIC&beneficiaryName=:beneficiaryName&beneficiaryAccount=:beneficiaryAccount&kpp=:kpp&source=:source'; for(key in options) { pattern = pattern.replace(':'+key, options[key]); } return pattern }(payment));
+  };
+
+  pub.initDynamicInputMask = function(input) {
+    new SmartInputMask(input).init();
+  }
+})();
+</script>
+
+<script>
+$(function() {
+  var redirecting = false;
+  function suggestBeneficiaryChange(event) {
+    var input = $(this);
+    if (event.which == 13 && input.is(':visible') && !redirecting) {
+      var autoCompleteResults = $('.ac_results');
+      if (input.val() && $('.ac_results').length && autoCompleteResults.is(':hidden')) {
+        autoCompleteResults.show();
+        autoCompleteResults.find('> ul > li:first').addClass('ac_over');
+      }
+      event.preventDefault();
+    }
+  }
+
+  var input = $('[name=suggestQuery]').on('keyup paste', suggestBeneficiaryChange);
+  smartPayment.initDynamicInputMask(input);
+
+  var autocompleteOptions = {
+    formatItem: smartPayment.formatPaymentSuggestion,
+    onSomeResult: function(el, data) {
+      if (data.forceLogout) {
+        location.href = '/logout';
+      }
+      else if (data.sessionInvalidated) {
+        location.href = '/';
+      }
+    },
+    onEmptyResult: smartPayment.showNewBeneficiaryOption
+  };
+
+  autocomplete('[name=suggestQuery]', '/smart-payments/suggest-beneficiary', autocompleteOptions)
+    .result(smartPayment.onAutocompleteResultSelected);
+
+  var errors = $('.control-group.error input');
+  if (errors.length) errors.first().focus();
+  else if ($('input[name="payment.amount"]').val()) $('input[name="payment.amount"]').focus();
+
+  $('#smart-payment-beneficiary .help-icon').popover('show');
+});
+</script>
+
+<div id="suggest-form">
+  <div id="suggest-form-title">
+    <strong>"Умный" перевод</strong>
+    
+      <i class="help-icon icon-question-circle" data-placement="right" data-content="Начните ввод первых букв данных получателя, назначения или комментария платежа, и система предложит похожие" data-original-title="" title=""></i>
+    
+  </div>
+  <input type="text" id="smart-payment" name="suggestQuery" class="span6 ac_input" autofocus="" placeholder="имя, счёт, номер карты или мобильный телефон; ИНН организации" autocomplete="off">
+  <div class="muted">
+    Например
+    <a href="#" class="smart-payment-example">Ольга</a>
+  </div>
+</div>
+
+<script>
+  $('.smart-payment-example').on('click', function() {
+    $('[name=suggestQuery]').val($(this).text().trim()).focus().trigger('keydown');
+  });
+</script>
+
+<ul id="vendors" class="vendor-icons toggle-on-search">
+  
+  
+    <li class="favorite">
+      <div class="favorite vendor" title="500100732259">
+        <div data-toggle="dropdown" data-target="#subscription-10425" class="favorite-options">…</div>
+        <a href="/gisgmp/tax?vatin=500100732259" title="Открыть" class="name-with-logo">
+          <div class="logo " style="background-image: url(/public/images/vendors/logo-fns.png)">
+            
+          </div>
+          <div class="name">500100732259</div>
+
+          
+            <span class="badge-top badge-history">2</span>
+          
+
+        </a>
+      </div>
+
+      <div class="dropdown" id="subscription-10425">
+  <ul class="dropdown-menu">
+    
+      
+<li>
+  <a href="/gisgmp/prefill-payment?chargeId=10427">
+    
+    57.21&nbsp;₽
+  </a>
+  
+</li>
+
+<li>
+  <a href="/gisgmp/prefill-payment?chargeId=10428">
+    
+    979.00&nbsp;₽
+  </a>
+  
+</li>
+
+      
+        <li class="divider"></li>
+      
+    
+      
+<li>
+  <a onclick="showAjaxDialog('/gis-subscriptions/edit?subscriptionId=10425');" href="javascript:void(0)">
+    
+      <i class="icon icon-pencil"></i>
+    
+    Назвать
+  </a>
+  
+</li>
+
+<li>
+  <a onclick="showAjaxDialog('/gis-subscriptions/unsubscribe?subscriptionId=10425');" href="javascript:void(0)">
+    
+      <i class="icon icon-remove"></i>
+    
+    Удалить
+  </a>
+  
+</li>
+
+      
+    
+  </ul>
+</div>
+    </li>
+  
+
+  
+    <li class="favorite">
+      <div class="favorite vendor" title="78ХС471014">
+        <div data-toggle="dropdown" data-target="#subscription-10426" class="favorite-options">…</div>
+        <a href="/gisgmp/traffic?subscriptionId=10426" title="Открыть" class="name-with-logo">
+          <div class="logo " style="background-image: url(/public/images/vendors/logo-gibdd.png)">
+            
+          </div>
+          <div class="name">78ХС471014</div>
+
+          
+            <span class="badge-top badge-history">2</span>
+          
+
+        </a>
+      </div>
+
+      <div class="dropdown" id="subscription-10426">
+  <ul class="dropdown-menu">
+    
+      
+<li>
+  <a href="/gisgmp/prefill-payment?chargeId=10429">
+    
+    500.00&nbsp;₽
+  </a>
+  
+</li>
+
+<li>
+  <a href="/gisgmp/prefill-payment?chargeId=10430">
+    
+    7.50&nbsp;₽
+  </a>
+  
+</li>
+
+      
+        <li class="divider"></li>
+      
+    
+      
+<li>
+  <a onclick="showAjaxDialog('/gis-subscriptions/edit?subscriptionId=10426');" href="javascript:void(0)">
+    
+      <i class="icon icon-pencil"></i>
+    
+    Назвать
+  </a>
+  
+</li>
+
+<li>
+  <a onclick="showAjaxDialog('/gis-subscriptions/unsubscribe?subscriptionId=10426');" href="javascript:void(0)">
+    
+      <i class="icon icon-remove"></i>
+    
+    Удалить
+  </a>
+  
+</li>
+
+      
+    
+  </ul>
+</div>
+    </li>
+  
+
+  
+    <li class="favorite">
+      <div class="favorite vendor" title="50АА007811">
+        <div data-toggle="dropdown" data-target="#subscription-10432" class="favorite-options">…</div>
+        <a href="/giszkh/prefillpayment?documentId=50%D0%90%D0%90007811-02-6051" title="Оплатить" class="name-with-logo">
+          <div class="logo " style="background-image: url(/public/images/vendors/logo-giszkh.png)">
+            
+          </div>
+          <div class="name">50АА007811</div>
+
+          
+            <span class="badge-top badge-history">1</span>
+          
+
+        </a>
+      </div>
+
+      <div class="dropdown" id="subscription-10432">
+  <ul class="dropdown-menu">
+    
+      
+<li>
+  <a href="/giszkh/prefillpayment?documentId=50%D0%90%D0%90007811-02-6051">
+    
+    4&nbsp;509.50&nbsp;₽
+  </a>
+  
+</li>
+
+      
+        <li class="divider"></li>
+      
+    
+      
+<li>
+  <a href="/giszkh/check-invoices?unifiedAccountNumber=50АА007811" class="name-with-logo post">
+    
+      <i class="icon icon-refresh"></i>
+    
+    Проверить
+  </a>
+  
+</li>
+
+<li>
+  <a onclick="showAjaxDialog('/gis-subscriptions/edit?subscriptionId=10432');" href="javascript:void(0)">
+    
+      <i class="icon icon-pencil"></i>
+    
+    Назвать
+  </a>
+  
+</li>
+
+<li>
+  <a onclick="showAjaxDialog('/gis-subscriptions/unsubscribe?subscriptionId=10432');" href="javascript:void(0)">
+    
+      <i class="icon icon-remove"></i>
+    
+    Удалить
+  </a>
+  
+</li>
+
+      
+    
+  </ul>
+</div>
+    </li>
+  
+
+  
+    <li class="favorite">
+      <div class="favorite vendor" title="Домашний интернет">
+        <div data-toggle="dropdown" data-target="#subscription-10485" class="favorite-options">…</div>
+        <a href="/tranzaxis/10485/invoice/10486/pay" title="Оплатить" class="name-with-logo">
+          <div class="logo " style="background-image: url(/public/images/transaction-icons/telecom.svg)">
+            
+              <img src="/public/images/transaction-icons/auto-payment-grey.svg">
+            
+          </div>
+          <div class="name">Домашний интернет</div>
+
+          
+            <span class="badge-top badge-history">1</span>
+          
+
+        </a>
+      </div>
+
+      <div class="dropdown" id="subscription-10485">
+  <ul class="dropdown-menu">
+    
+      
+<li>
+  <a href="/tranzaxis/10485/invoice/10486/pay">
+    
+    600.00&nbsp;₽
+  </a>
+  
+</li>
+
+      
+        <li class="divider"></li>
+      
+    
+      
+<li>
+  <a href="/tranzaxis/10485/invoices" class="name-with-logo">
+    
+      <i class="icon icon-refresh"></i>
+    
+    Проверить
+  </a>
+  
+</li>
+
+<li>
+  <a onclick="showAjaxDialog('/tranzaxis/10485/alias')" href="javascript:void(0)">
+    
+      <i class="icon icon-pencil"></i>
+    
+    Назвать
+  </a>
+  
+</li>
+
+<li>
+  <a href="/tranzaxis/10485/edit">
+    
+      <i class="icon icon-cog"></i>
+    
+    Настроить
+  </a>
+  
+</li>
+
+<li>
+  <a href="/tranzaxis/10485/unsubscribe" data-post-confirmation-title="Удаление подписки" class="post" data-post-confirmation="Вы уверены, что хотите удалить подписку?">
+    
+      <i class="icon icon-remove"></i>
+    
+    Удалить
+  </a>
+  
+</li>
+
+      
+    
+  </ul>
+</div>
+    </li>
+  
+
+  
+    <li class="favorite">
+      <div class="favorite vendor" title="Оплата услуг ВЦКП">
+        <div data-toggle="dropdown" data-target="#subscription-10487" class="favorite-options">…</div>
+        <a href="/tranzaxis/10487/invoice/10489/pay" title="Оплатить" class="name-with-logo">
+          <div class="logo " style="background-image: url(/public/images/vendors/403318604.png)">
+            
+              <img src="/public/images/transaction-icons/auto-payment-grey.svg">
+            
+          </div>
+          <div class="name">Оплата услуг ВЦКП</div>
+
+          
+            <span class="badge-top badge-history">1</span>
+          
+
+        </a>
+      </div>
+
+      <div class="dropdown" id="subscription-10487">
+  <ul class="dropdown-menu">
+    
+      
+<li>
+  <a href="/tranzaxis/10487/invoice/10489/pay">
+    
+    2&nbsp;390.60&nbsp;₽
+  </a>
+  
+</li>
+
+      
+        <li class="divider"></li>
+      
+    
+      
+<li>
+  <a href="/tranzaxis/10487/invoices" class="name-with-logo">
+    
+      <i class="icon icon-refresh"></i>
+    
+    Проверить
+  </a>
+  
+</li>
+
+<li>
+  <a onclick="showAjaxDialog('/tranzaxis/10487/alias')" href="javascript:void(0)">
+    
+      <i class="icon icon-pencil"></i>
+    
+    Назвать
+  </a>
+  
+</li>
+
+<li>
+  <a href="/tranzaxis/10487/edit">
+    
+      <i class="icon icon-cog"></i>
+    
+    Настроить
+  </a>
+  
+</li>
+
+<li>
+  <a href="/tranzaxis/10487/unsubscribe" data-post-confirmation-title="Удаление подписки" class="post" data-post-confirmation="Вы уверены, что хотите удалить подписку?">
+    
+      <i class="icon icon-remove"></i>
+    
+    Удалить
+  </a>
+  
+</li>
+
+      
+    
+  </ul>
+</div>
+    </li>
+  
+
+  
+
+  <script>
+  $(function() {
+    $('.remove-payment').on('click', function(event) {
+      var payment = $(this),
+          paymentId = payment.data('payment-id'),
+          vendorId = payment.data('vendor-id'),
+          removeMessage = payment.data('remove-message');
+
+      if (confirm(removeMessage))
+        location = '/vendorpayments/remove?vendorId=' + vendorId + '&paymentId=' + paymentId + '&authenticityToken=6d4f14f8c737dcac1f9674ea9fc498119682c7fc';
+
+      return false;
+    });
+  });
+</script>
+
+
+  <li>
+  <div class="vendor">
+    <a href="/payments/dashboard">
+      <div class="logo" style="background-image: url(/public/images/vendors/all-vendors.svg); background-size: 25%"></div>
+      <div class="name">Платежи и переводы</div>
+    </a>
+  </div>
+</li>
+</ul>
+
+<div class="row-fluid">
+  <div class="span6" id="welcome-tour-accounts">
+
+    <div class="sub-header accounts">
+      <h2>
+        <a href="/overview">
+          <i class="icon"></i>Счета
+          <span class="pull-right">
+            
+  <span class="text">
+    Финансовая свобода
+  </span>
+
+  <span class="amount-holder">
+    <div class="arrow"></div>
+    <span class="amount">
+      1&nbsp;515&nbsp;396.39 <span class="currency">₽</span>
+    </span>
+    <small class="my-assets"><br>Моих средств  <span class="currency">₽</span></small>
+  </span>
+
+          </span>
+        </a>
+      </h2>
+    </div>
+
+    <table class="table accounts">
+      <thead>
+        <tr>
+          <th></th>
+          <th class="account">Счёт</th>
+          <th></th>
+          <th class="right">Доступно</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        
+
+        
+          <tr>
+            <td>
+              <span style="color:#0099D6;" class="account-icon  card"></span>
+            </td>
+            <td class="account"><a href="/statement?accountId=10028">Зарплатный</a></td>
+            <td>
+
+
+  <script>function AccountCards(){function n(n){$('.account-cards [data-toggle="popover"]',n).each(function(n,o){$(o).popover()})}this.init=function(o){n(o)}}</script>
+  <script>
+    initPage(new AccountCards().init);
+  </script>
+  <div class="pull-right account-cards">
+    
+      
+        
+        
+        <a href="/cards/overview?cardIdToHighlight=10060" class="icon-card-mastercard align-middle m-l-1" data-toggle="popover" data-content="Travel *6192" data-trigger="hover" data-placement="top" data-original-title="" title="">
+        </a>
+      
+        
+        
+        <a href="/cards/overview?cardIdToHighlight=10061" class="icon-card-mastercard align-middle m-l-1" data-toggle="popover" data-content="Золотая *2224" data-trigger="hover" data-placement="top" data-original-title="" title="">
+        </a>
+      
+        
+        
+        <a href="/cards/overview?cardIdToHighlight=10067" class="icon-card-mastercard align-middle m-l-1" data-toggle="popover" data-content="Standard КХЛ *1111" data-trigger="hover" data-placement="top" data-original-title="" title="">
+        </a>
+      
+        
+        
+        <a href="/cards/overview?cardIdToHighlight=10070" class="icon-card-mastercard align-middle m-l-1" data-toggle="popover" data-content="Яркая *4123" data-trigger="hover" data-placement="top" data-original-title="" title="">
+        </a>
+      
+        
+        
+        <a href="/cards/overview?cardIdToHighlight=10071" class="icon-card-unknown align-middle m-l-1" data-toggle="popover" data-content="Electon *0556" data-trigger="hover" data-placement="top" data-original-title="" title="">
+        </a>
+      
+        
+        
+        <a href="/cards/overview?cardIdToHighlight=10496" class="icon-card-expiring analytics-btn-expiring align-middle m-l-1" data-toggle="popover" data-content="Срок действия карты Единая карта петербуржца *1123 заканчивается 20.02.2020" data-trigger="hover" data-placement="top" data-original-title="" title="">
+        </a>
+      
+    
+    
+  </div>
+</td>
+            <td class="right">344&nbsp;690.00&nbsp;₽</td>
+          </tr>
+        
+          <tr>
+            <td>
+              <span style="color:#54A89D;" class="account-icon  card"></span>
+            </td>
+            <td class="account"><a href="/statement?accountId=10030">Счёт *4467</a></td>
+            <td>
+
+
+  <script>function AccountCards(){function n(n){$('.account-cards [data-toggle="popover"]',n).each(function(n,o){$(o).popover()})}this.init=function(o){n(o)}}</script>
+  <script>
+    initPage(new AccountCards().init);
+  </script>
+  <div class="pull-right account-cards">
+    
+      
+        
+        
+        <a href="/cards/overview?cardIdToHighlight=10062" class="icon-card-mastercard align-middle m-l-1" data-toggle="popover" data-content="Travel *2225" data-trigger="hover" data-placement="top" data-original-title="" title="">
+        </a>
+      
+        
+        
+        <a href="/cards/overview?cardIdToHighlight=10063" class="icon-card-visa align-middle m-l-1" data-toggle="popover" data-content="Неэмбоссированная *7774" data-trigger="hover" data-placement="top" data-original-title="" title="">
+        </a>
+      
+        
+        
+        <a href="/cards/overview?cardIdToHighlight=10065" class="icon-card-mastercard align-middle m-l-1" data-toggle="popover" data-content="ЯСЧИТАЮ *0002" data-trigger="hover" data-placement="top" data-original-title="" title="">
+        </a>
+      
+        
+        
+        <a href="/cards/overview?cardIdToHighlight=10069" class="icon-card-mastercard align-middle m-l-1" data-toggle="popover" data-content="Неэмбоссированная *0000" data-trigger="hover" data-placement="top" data-original-title="" title="">
+        </a>
+      
+    
+    
+  </div>
+</td>
+            <td class="right">121&nbsp;634.00&nbsp;₽</td>
+          </tr>
+        
+          <tr>
+            <td>
+              <span style="color:#DF3632;" class="account-icon  other"></span>
+            </td>
+            <td class="account"><a href="/statement?accountId=10034">Счёт *6667</a></td>
+            <td>
+
+</td>
+            <td class="right">-16&nbsp;608.00&nbsp;€</td>
+          </tr>
+        
+          <tr>
+            <td>
+              <span style="color:#05618D;" class="account-icon  other"></span>
+            </td>
+            <td class="account"><a href="/statement?accountId=10042">Счёт *5557</a></td>
+            <td>
+
+</td>
+            <td class="right">4&nbsp;130.00&nbsp;$</td>
+          </tr>
+        
+          <tr>
+            <td>
+              <span style="color:#84c026;" class="account-icon  other"></span>
+            </td>
+            <td class="account"><a href="/statement?accountId=10045">Счёт *5678</a></td>
+            <td>
+
+</td>
+            <td class="right">-3&nbsp;796.00&nbsp;₽</td>
+          </tr>
+        
+
+        
+          <tr>
+            <td><span style="color:#84c026;" class="account-icon other"></span></td>
+            <td class="account"><a href="/statement?accountId=10041">Накопительный *0001</a></td>
+            <td></td>
+            <td class="right">1&nbsp;500&nbsp;100.00&nbsp;₽</td>
+          </tr>
+        
+
+        
+          <tr>
+            <td><span style="color:#0099D6" class="account-icon deposit"></span></td>
+            <td class="account"><a href="/deposits">Вклады</a></td>
+            <td></td>
+            <td class="right">223&nbsp;456.00&nbsp;₽</td>
+          </tr>
+        
+
+      <tr class="offer-for-product">
+      <td class="account-icon card"></td>
+      <td class="account">Вам одобрен кредит</td>
+      <td class="right"></td>
+      <td class="right">
+        120&nbsp;000.00&nbsp;₽
+        <div class="offer-apply">
+          <a href="/loan-offer/absd-efgh" class="btn btn-primary btn-small">Получить</a>
+        </div>
+      </td>
+    </tr></tbody>
+    </table>
+
+    
+
+  </div>
+  <div class="span6">
+    <div class="sub-header transactions">
+      <h2>
+        <a href="/statement">
+          <i class="icon"></i>Последние операции
+        </a>
+      </h2>
+    </div>
+
+    <div id="last-transactions"><table class="table">
+  
+    <tbody><tr>
+      <td>
+        <div class="date">22.11.2019</div>
+        
+        <div class="time muted">22:00</div>
+      </td>
+      <td class="details">
+        <a href="javascript:showAjaxDialog('/transactions/details?id=100116&amp;accountId=10028')">
+          <span class="name">Лукойл</span><br>
+          <span class="description">Заправка бензина 95Е, 40 л., карта *6192</span>
+        </a>
+      </td>
+      <td class="right amount negative">
+        -174.00&nbsp;₽
+      </td>
+    </tr>
+  
+    <tr>
+      <td>
+        <div class="date">23.11.2019</div>
+        
+        <div class="time muted">22:00</div>
+      </td>
+      <td class="details">
+        <a href="javascript:showAjaxDialog('/transactions/details?id=100113&amp;accountId=10028')">
+          <span class="name">ЗАО Коммунальный мир</span><br>
+          <span class="description">Квартплата за текущий месяц</span>
+        </a>
+      </td>
+      <td class="right amount negative">
+        -143.00&nbsp;₽
+      </td>
+    </tr>
+  
+    <tr>
+      <td>
+        <div class="date">23.11.2019</div>
+        
+        <div class="time muted">22:00</div>
+      </td>
+      <td class="details">
+        <a href="javascript:showAjaxDialog('/transactions/details?id=100115&amp;accountId=10028')">
+          <span class="name">ГУП ВЦКП "Жилищное хозяйство"</span><br>
+          <span class="description">коммунальные платежи (январь 2018)</span>
+        </a>
+      </td>
+      <td class="right amount negative">
+        -12.00&nbsp;₽
+      </td>
+    </tr>
+  
+    <tr>
+      <td>
+        <div class="date">24.11.2019</div>
+        
+        <div class="time muted">22:00</div>
+      </td>
+      <td class="details">
+        <a href="javascript:showAjaxDialog('/transactions/details?id=100111&amp;accountId=10028')">
+          <span class="name">ПАО "БАНК "САНКТ-ПЕТЕРБУРГ"</span><br>
+          <span class="description">Комиссия по тарифу 12.04 за выполнение услуг по сопровождению полета, в том числе НДС (18%)</span>
+        </a>
+      </td>
+      <td class="right amount negative">
+        -68.00&nbsp;₽
+      </td>
+    </tr>
+  
+    <tr>
+      <td>
+        <div class="date">25.11.2019</div>
+        
+        <div class="time muted">22:00</div>
+      </td>
+      <td class="details">
+        <a href="javascript:showAjaxDialog('/transactions/details?id=100109&amp;accountId=10028')">
+          <span class="name">АО Весело живём</span><br>
+          <span class="description">Покупка товара в универмаге, карта *6192</span>
+        </a>
+      </td>
+      <td class="right amount negative">
+        -44.00&nbsp;₽
+      </td>
+    </tr>
+  
+  
+</tbody></table></div>
+  </div>
+</div>
+
+
+  <div class="sub-header event-calendar">
+    <h2 class="my-events submenu-heading">
+      <a href="/ical/events">
+        <i class="icon-calendar"></i>
+        Мои события
+      </a>
+    </h2>
+  </div>
+  <div id="event-time-line"><div class="time-line-container">
+  
+    <a href="javascript:showAjaxDialog('/recurrent-payments/edit?id=10550', null, null, function(req){document.location.pathname='/subscriptions';req.status=0;});" class="calendar-event event-recurrent" title="Регулярный перевод">
+      <div class="event-date"><div class="day"><span>22</span></div><div class="month">01</div> </div>
+      <div class="event-type">Регулярный перевод</div>
+      <div class="event-details">150.50&nbsp;₽</div>
+    </a>
+  
+    <a href="javascript:showAjaxDialog('/recurrent-payments/edit?id=10225', null, null, function(req){document.location.pathname='/subscriptions';req.status=0;});" class="calendar-event event-recurrent" title="Регулярный перевод">
+      <div class="event-date"><div class="day"><span>15</span></div><div class="month">02</div> </div>
+      <div class="event-type">Регулярный перевод</div>
+      <div class="event-details">10.00&nbsp;₽</div>
+    </a>
+  
+    <a href="/cards?cardIdToHighlight=10496" class="calendar-event event-cardExpiration" title="Окончание карты">
+      <div class="event-date"><div class="day"><span>20</span></div><div class="month">02</div> </div>
+      <div class="event-type">Окончание карты</div>
+      <div class="event-details">Единая карта петербуржца</div>
+    </a>
+  
+    <a href="javascript:showAjaxDialog('/recurrent-payments/edit?id=10225', null, null, function(req){document.location.pathname='/subscriptions';req.status=0;});" class="calendar-event event-recurrent" title="Регулярный перевод">
+      <div class="event-date"><div class="day"><span>15</span></div><div class="month">03</div> </div>
+      <div class="event-type">Регулярный перевод</div>
+      <div class="event-details">10.00&nbsp;₽</div>
+    </a>
+  
+    <a href="/cards?cardIdToHighlight=10060" class="calendar-event event-cardExpiration" title="Окончание карты">
+      <div class="event-date"><div class="day"><span>27</span></div><div class="month">03</div> </div>
+      <div class="event-type">Окончание карты</div>
+      <div class="event-details">Travel</div>
+    </a>
+  
+    <a href="/cards?cardIdToHighlight=10065" class="calendar-event event-cardExpiration" title="Окончание карты">
+      <div class="event-date"><div class="day"><span>27</span></div><div class="month">03</div> </div>
+      <div class="event-type">Окончание карты</div>
+      <div class="event-details">ЯСЧИТАЮ</div>
+    </a>
+  
+  <div class="calendar-event event-add" onclick="showAjaxDialog('/ical/events/personal-event')">
+    <div class="event-type">Личное событие</div>
+  </div>
+</div></div>
+
+
+<script>
+  function showVendor(vendorElement) {
+    var title = vendorElement.title ? vendorElement.title : vendorElement.attr('title');
+    location.href = "/vendors#" + title;
+  }
+
+  $(function() {
+    $('#event-time-line').load('/eventcalendar/timeline');
+    $('#last-transactions').load('/welcome/lasttransactions');
+  });
+</script>
+
+
+  <script>var OneTimeHint=function(e){function t(){if(!$(".btn.gotit").length){var t=e.key.replace(/\./g,"-"),o=e.message+'<button id="'+t+'" class="btn btn-primary btn-small gotit">'+e.buttonLabel+"</button>";i.popover=$(e.target).popover({animation:!0,placement:e.placement,trigger:"manual",content:o,html:!0}).popover("show"),i.popover.next().addClass("one-time-hint"),$("#"+t+".btn.gotit").on("click",n)}}function n(){i.popover.popover("hide"),$.post("/hints/hide",{key:e.key,authenticityToken:e.authenticityToken})}var i=this;window.OneTimeHintDeferred||(window.OneTimeHintDeferred=$.when()),this.init=function(){var n=window.OneTimeHintDeferred,i=window.OneTimeHintDeferred=$.Deferred();n.then(function(){$.getJSON("/hints/show",{key:e.key},function(e){e&&setTimeout(t,1e3),i.resolve()})})}};</script>
+  <script>
+    $(function() {
+      if (window.welcomeTour && window.welcomeTour.startedOnPageLoad) return;
+      new OneTimeHint({
+        target: '#bank-overview',
+        key: 'HINT_Bank.overview.full',
+        message: 'Полный обзор доступен из меню',
+        buttonLabel: 'Ясно',
+        placement: 'bottom',
+        authenticityToken: '6d4f14f8c737dcac1f9674ea9fc498119682c7fc'
+      }).init();
+    });
+  </script>
+
+
+  <script>var OneTimeHint=function(e){function t(){if(!$(".btn.gotit").length){var t=e.key.replace(/\./g,"-"),o=e.message+'<button id="'+t+'" class="btn btn-primary btn-small gotit">'+e.buttonLabel+"</button>";i.popover=$(e.target).popover({animation:!0,placement:e.placement,trigger:"manual",content:o,html:!0}).popover("show"),i.popover.next().addClass("one-time-hint"),$("#"+t+".btn.gotit").on("click",n)}}function n(){i.popover.popover("hide"),$.post("/hints/hide",{key:e.key,authenticityToken:e.authenticityToken})}var i=this;window.OneTimeHintDeferred||(window.OneTimeHintDeferred=$.when()),this.init=function(){var n=window.OneTimeHintDeferred,i=window.OneTimeHintDeferred=$.Deferred();n.then(function(){$.getJSON("/hints/show",{key:e.key},function(e){e&&setTimeout(t,1e3),i.resolve()})})}};</script>
+  <script>
+    $(function() {
+      if (window.welcomeTour && window.welcomeTour.startedOnPageLoad) return;
+      new OneTimeHint({
+        target: '#smart-payment',
+        key: 'HINT_PRIVATE_TO_CORPORATE_PAYMENT',
+        message: 'Мы можем подсказать реквизиты организации - всего лишь введите ИНН в умный поиск!',
+        buttonLabel: 'Ясно',
+        placement: 'bottom',
+        authenticityToken: '6d4f14f8c737dcac1f9674ea9fc498119682c7fc'
+      }).init();
+    });
+  </script>
+
+
+  <script>function ProductOffer(e,n,t){var r=this;r.context=e,r.container=n,r.crmEvents=new CrmEvents(t);var o=function(e){if(e){var n=$("#offer-template-"+r.context).html().trim();$(n.replace(/OFFER_AMOUNT/g,e.amount).replace(/OFFER_RATE/g,e.rate).replace(/OFFER_MESSAGE/g,e.message).replace(/OFFER_URL/g,e.applicationURL)).appendTo(r.container),$.mobile&&$(r.container).enhanceWithin(),$("a",r.container).on("click",function(){"undefined"!=typeof offers&&r.crmEvents.notifyClick(e.ref)})}};return r.show=function(){return $.get("/offers/product-offer?context="+r.context,o)},r}</script>
+
+  <script id="offer-template-welcome" type="custom-template">
+    <tr class="offer-for-product">
+      <td class="account-icon card"></td>
+      <td class="account">OFFER_MESSAGE</td>
+      <td class="right"></td>
+      <td class="right">
+        OFFER_AMOUNT
+        <div class="offer-apply">
+          <a href="OFFER_URL" class="btn btn-primary btn-small">Получить</a>
+        </div>
+      </td>
+    </tr>
+  </script>
+
+  <script>
+    $(function() {
+      new ProductOffer('welcome', 'table.accounts tbody', '6d4f14f8c737dcac1f9674ea9fc498119682c7fc').show();
+    })
+  </script>
+
+
+        
+
+  <div class="bottom-cms-content">
+    
+    
+      <div class="cms-content"></div>
+    
+  </div>
+
+      </div>
+
+    </div>
+    <div class="push"></div>
+  </div>
+</div>
+
+<div id="footer">
+  
+    <div class="cms-content"></div>
+  
+  <div id="footer-info">
+    <div class="social-links pull-right">
+      <a class="icon-vkontakte-letter" href="https://vk.com/bspb" target="_blank"></a> <a class="icon-fb-letter" href="https://www.facebook.com/bspb" target="_blank"></a> <a class="icon-twitter" href="https://twitter.com/#!/bank_spb" target="_blank"></a> <a class="icon-odnoklassniki" href="https://www.odnoklassniki.ru/bspb" target="_blank"></a> <a class="icon-inst" href="https://instagram.com/bank_spb" target="_blank"></a>
+    </div>
+
+    <div class="links pull-right">
+
+      
+        
+        
+        
+        
+        
+        
+        
+      
+
+      
+      
+      <div class="locales">
+        <button type="button" class="btn btn-text btn-toggle active" data-toggle="button" aria-pressed="false" autocomplete="off">
+          <div class="handle"></div>
+        </button>
+      </div>
+
+      
+        <a class="user-manual" target="_blank" href="https://www.bspb.ru/business/distant-services/docs/rukovodstvo-polzovatelja-i2B.pdf">Руководство пользователя</a>
+        
+      
+      
+
+      <a class="website" href="https://www.bspb.ru/">Сайт банка</a>
+    </div>
+
+    <div class="copyright">© 1990 – 2020 ПАО «Банк «Санкт-Петербург»</div>
+    <div class="license">Генеральная лицензия Банка России на совершение банковских операций №436 от 31.12.2014</div>
+  </div>
+</div>
+
+
+
+<script>function Offers(n,t){function e(t){var e=$(t.target).closest(".offer"),o=i(e);$.post(t.target.href,{authenticityToken:n}),s.crmEvents.notifyDecline(o);var f=$(".offer:not(:visible):first");return e.animateTo($("#offers-button"),function(){e.remove(),$(".offer").length||$("#show-all-offers").hide(),r(f)}),!1}function r(n){n.length&&s.crmEvents.notifyShown(i(n))}function i(n){return n.attr("id").replace("offer-","")}function o(n){if(a(n))return!0;var e=$(this).find(".offer-action"),r=e.attr("href");if(!r)return!0;if(!t)return!0;var o=i($(this));return s.crmEvents.notifyClick(o).done(function(){r.indexOf("/return-call")>=0&&s.crmEvents.notifyDecline(o);var n=e.attr("target");n?window.open(r,n):s.openUrl(r)}),!1}function f(n){var e=$(n.target).closest("a"),r=e.attr("href");if(!r)return!0;if(!t)return!0;var i=c(e.closest("li"));return s.crmEvents.notifyClick(i).done(function(){r.indexOf("/return-call")>=0&&s.crmEvents.notifyDecline(i);var n=e.attr("target");n?window.open(r,n):window.location.hash=r}),!1}function c(n){return n.data("offer-ref")}function a(n){var t=$(n.target).closest("a");return t.is("a")&&t.closest(".offer-text").length>0}var s=this;s.crmEvents=new CrmEvents(n,t),s.openUrl=function(n){window.location.assign(n)},s.init=function(){$(".offer:visible").each(function(n,t){var e=$(t).attr("id").replace("offer-","");s.crmEvents.notifyShown(e)}),$(".offer .decline").on("click",e),$(".offer").on("click",o)},s.mobileInit=function(){$("#credit-offer-banner li:visible").each(function(n,t){var e=c($(t));s.crmEvents.notifyShown(e),$(t).on("click",f)})}}</script>
+
+<script>
+  $(function() {
+    validator.init();
+    validator.replaceNativeValidation();
+    new DoubleClickPreventer().init();
+    new ConfirmDialog('6d4f14f8c737dcac1f9674ea9fc498119682c7fc').init();
+    new AjaxModal().init();
+    new IframeSessionExpirationHandler().init();
+
+    new ExternalLinksOpener({
+      textLeavingSiteWarning: 'Вы покидаете сайт интернет-банка БСПб и будете перенаправлены на сайт партнера',
+      textForward: 'Перейти',
+      textCancel: 'Вернуться'
+    }).init();
+  });
+
+  
+    var offers = new Offers('6d4f14f8c737dcac1f9674ea9fc498119682c7fc', true);
+    $(function() {offers.init()});
+  
+</script>
+
+<div id="default-dialog" class="modal fade hidden" tabindex="-1"></div>
+
+
+
+  <script>function FeedbackPopup(e,n){function c(e){e.find(".active").show(),e.find(".passive").hide()}function t(e){e.find(".active").hide(),e.find(".passive").show()}function o(){var e=$(this),n=e.siblings();c(e),t(n),e.addClass("selected"),n.removeClass("selected"),$("#feedback-comment-block").slideDown(),$('[name="feedback.answer"]').val(e.data("answer"))}function i(){var e=$(this),n=e.siblings().filter(":not(.selected)");c(e),t(n)}function a(){var e=$(this);0===$(".emoticon-btn.selected").length?c($(".emoticon-btn")):e.hasClass("selected")||t(e)}function s(){d(function(){$("#feedback-popup").clone().appendTo("#feedback-popup").animateTo($(".help-menu")),$("#feedback-popup").hide()})}function f(){d(function(){$("#feedback-popup").hide()})}function d(e){$.post("/feedback/close",{authenticityToken:n},e)}function u(){$("#feedback-popup-success").show(),setTimeout(function(){$("#feedback-popup-success").fadeOut(1e3)},4e3)}function p(){$("#feedback-submit").prop("disabled",!0),f(),u()}function b(e){e.preventDefault();var c=$('[name="feedback.answer"]',"#feedback-form").val(),t=$('[name="feedback.comment"]',"#feedback-form").val();$.post("/feedback/submit",{authenticityToken:n,"feedback.answer":c,"feedback.comment":t},p)}this.init=function(){e&&$.get("/feedback/timeout",function(e){setTimeout(function(){$("#feedback-popup").show()},e.timeout)}),$(".emoticon-btn").hover(i,a),$(".emoticon-btn").on("click",o),$(".close-feedback-popup").on("click",s),$("#feedback-submit").on("click",b)}}</script>
+  <div id="feedback-popup-success" class="feedback-container print-hidden hidden">
+  <div>
+    <span>
+      <img src="/public/images/feedback-popup/success.svg" alt="success">
+    </span>
+    <span class="feedback-popup-success-message">Спасибо за ваш отзыв!</span>
+  </div>
+</div>
+
+  <script>
+    $(function() {
+      var feedbackAllowed = false;
+      new FeedbackPopup(feedbackAllowed, '6d4f14f8c737dcac1f9674ea9fc498119682c7fc').init();
+    });
+  </script>
+
+  <div id="feedback-popup" class="feedback-container print-hidden hidden">
+    <div>
+      <div class="title">Оцените Интернет-банк</div>
+      <span class="close-feedback-popup feedback-close-icon">
+        <img src="/public/images/feedback-popup/close.svg" alt="close">
+      </span>
+    </div>
+    <div id="emoticons">
+      <div class="emoticon-btn" data-answer="GOOD">
+        <img class="emoticon active" src="/public/images/feedback-popup/smile-face-good-color.svg" alt="good">
+        <img class="emoticon passive hidden" src="/public/images/feedback-popup/smile-face-good-bw.svg" alt="good">
+        <div class="emoticon-label">Нравится</div>
+      </div>
+      <div class="emoticon-btn" data-answer="NORMAL">
+        <img class="emoticon active" src="/public/images/feedback-popup/smile-face-normal-color.svg" alt="normal">
+        <img class="emoticon passive hidden" src="/public/images/feedback-popup/smile-face-normal-bw.svg" alt="normal">
+        <div class="emoticon-label">Хорошо</div>
+      </div>
+      <div class="emoticon-btn" data-answer="BAD">
+        <img class="emoticon active" src="/public/images/feedback-popup/smile-face-bad-color.svg" alt="bad">
+        <img class="emoticon passive hidden" src="/public/images/feedback-popup/smile-face-bad-bw.svg" alt="bad">
+        <div class="emoticon-label">Не нравится</div>
+      </div>
+    </div>
+    <div id="feedback-comment-block">
+      <div id="feedback-comment-title">
+        <span class="title">Комментарий&nbsp;</span>
+        <span class="subtitle">(Дополнительно)</span>
+      </div>
+      <div id="feedback-form">
+        <input type="hidden" name="feedback.answer" id="">
+        <textarea name="feedback.comment" id="feedback-comment" maxlength="4000" rows="3" placeholder=""></textarea>
+        <hr>
+        <div id="feedback-action-buttons">
+          <a class="close-feedback-popup btn btn-small btn-secondary">Ответить позже</a>
+          <button id="feedback-submit" class="btn btn-small btn-primary">Отправить ответ</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+</body></html>

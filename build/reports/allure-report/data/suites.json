@@ -1,0 +1,57 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "qa.automation.QaAutomationTest",
+    "children" : [ {
+      "name" : "testCanLoginWithValidCredentials()",
+      "uid" : "6e0d8b5c664ace9e",
+      "parentUid" : "2c9c5e2bafceac651d8d8cbcc06330e2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579635165202,
+        "stop" : 1579635183156,
+        "duration" : 17954
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "testRestoreAccess()",
+      "uid" : "d20eca2d930dfcd5",
+      "parentUid" : "2c9c5e2bafceac651d8d8cbcc06330e2",
+      "status" : "failed",
+      "time" : {
+        "start" : 1579635183357,
+        "stop" : 1579635199876,
+        "duration" : 16519
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "testLoginWithInvalidCredentials()",
+      "uid" : "6b166d5441314107",
+      "parentUid" : "2c9c5e2bafceac651d8d8cbcc06330e2",
+      "status" : "failed",
+      "time" : {
+        "start" : 1579635199907,
+        "stop" : 1579635216927,
+        "duration" : 17020
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "testLoginWitInvalidhOtp()",
+      "uid" : "257e6b9d60c26398",
+      "parentUid" : "2c9c5e2bafceac651d8d8cbcc06330e2",
+      "status" : "failed",
+      "time" : {
+        "start" : 1579635216935,
+        "stop" : 1579635234226,
+        "duration" : 17291
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "2c9c5e2bafceac651d8d8cbcc06330e2"
+  } ]
+}

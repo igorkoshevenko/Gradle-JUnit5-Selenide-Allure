@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="qa.automation.LoginTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-03-04T09:43:54" hostname="DESKTOP-U5B0LUD" time="56.966">
+  <properties/>
+  <testcase name="testCanLoginWithValidCredentials()" classname="qa.automation.LoginTest" time="17.541"/>
+  <testcase name="testLoginWitInvalidOtp()" classname="qa.automation.LoginTest" time="13.389"/>
+  <testcase name="testRestoreAccess()" classname="qa.automation.LoginTest" time="12.975"/>
+  <testcase name="testLoginWithInvalidCredentials()" classname="qa.automation.LoginTest" time="13.041"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[мар. 04, 2020 11:43:54 AM com.codeborne.selenide.impl.WebDriverThreadLocalContainer getAndCheckWebDriver
+INFO: No webdriver is bound to current thread: 14 - let's create a new webdriver
+Starting ChromeDriver 80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}) on port 1446
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1583315039.030][WARNING]: Timed out connecting to Chrome, retrying...
+мар. 04, 2020 11:44:01 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+мар. 04, 2020 11:44:01 AM com.codeborne.selenide.webdriver.BrowserResizer adjustBrowserSize
+INFO: Set browser size to 1366x768
+[1583315043.245][WARNING]: Timed out connecting to Chrome, retrying...
+мар. 04, 2020 11:44:05 AM com.codeborne.selenide.webdriver.WebDriverFactory logBrowserVersion
+INFO: BrowserName=chrome Version=80.0.3987.132 Platform=WINDOWS
+мар. 04, 2020 11:44:05 AM com.codeborne.selenide.webdriver.WebDriverFactory createWebDriver
+INFO: Selenide v. 5.4.1
+мар. 04, 2020 11:44:05 AM com.codeborne.selenide.webdriver.WebDriverFactory logSeleniumInfo
+INFO: Selenium WebDriver v. 3.141.59 build time: 2018-11-14T08:17:03
+мар. 04, 2020 11:44:05 AM com.codeborne.selenide.drivercommands.CreateDriverCommand createDriver
+INFO: Create webdriver in current thread 14: ChromeDriver -> ChromeDriver: chrome on WINDOWS (a061caed54aff9300a5bf701a88a1aee)
+[1583315047.213][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583315047.316][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583315047.424][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583315047.762][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583315047.873][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583315050.078][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583315050.187][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583315050.299][SEVERE]: Timed out receiving message from renderer: 0.100
+мар. 04, 2020 11:44:10 AM com.codeborne.selenide.drivercommands.CloseDriverCommand run
+INFO: Close webdriver: 14 -> ChromeDriver: chrome on WINDOWS (a061caed54aff9300a5bf701a88a1aee)
+мар. 04, 2020 11:44:10 AM com.codeborne.selenide.drivercommands.CloseBrowser run
+INFO: Trying to close the browser ChromeDriver ...
+мар. 04, 2020 11:44:11 AM com.codeborne.selenide.drivercommands.CloseDriverCommand run
+INFO: Closed webdriver 14 in 635 ms
+мар. 04, 2020 11:44:11 AM com.codeborne.selenide.impl.WebDriverThreadLocalContainer getAndCheckWebDriver
+INFO: No webdriver is bound to current thread: 14 - let's create a new webdriver
+Starting ChromeDriver 80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}) on port 41049
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1583315054.729][WARNING]: Timed out connecting to Chrome, retrying...
+мар. 04, 2020 11:44:16 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+мар. 04, 2020 11:44:16 AM com.codeborne.selenide.webdriver.BrowserResizer adjustBrowserSize
+INFO: Set browser size to 1366x768
+[1583315058.820][WARNING]: Timed out connecting to Chrome, retrying...
+мар. 04, 2020 11:44:20 AM com.codeborne.selenide.webdriver.WebDriverFactory logBrowserVersion
+INFO: BrowserName=chrome Version=80.0.3987.132 Platform=WINDOWS
+мар. 04, 2020 11:44:20 AM com.codeborne.selenide.webdriver.WebDriverFactory createWebDriver
+INFO: Selenide v. 5.4.1
+мар. 04, 2020 11:44:20 AM com.codeborne.selenide.webdriver.WebDriverFactory logSeleniumInfo
+INFO: Selenium WebDriver v. 3.141.59 build time: 2018-11-14T08:17:03
+мар. 04, 2020 11:44:20 AM com.codeborne.selenide.drivercommands.CreateDriverCommand createDriver
+INFO: Create webdriver in current thread 14: ChromeDriver -> ChromeDriver: chrome on WINDOWS (327dda45936bb0c8098a26de7ad82b4e)
+[1583315061.708][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583315061.818][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583315062.182][SEVERE]: Timed out receiving message from renderer: 0.100
+мар. 04, 2020 11:44:24 AM com.codeborne.selenide.drivercommands.CloseDriverCommand run
+INFO: Close webdriver: 14 -> ChromeDriver: chrome on WINDOWS (327dda45936bb0c8098a26de7ad82b4e)
+мар. 04, 2020 11:44:24 AM com.codeborne.selenide.drivercommands.CloseBrowser run
+INFO: Trying to close the browser ChromeDriver ...
+мар. 04, 2020 11:44:24 AM com.codeborne.selenide.drivercommands.CloseDriverCommand run
+INFO: Closed webdriver 14 in 671 ms
+мар. 04, 2020 11:44:25 AM com.codeborne.selenide.impl.WebDriverThreadLocalContainer getAndCheckWebDriver
+INFO: No webdriver is bound to current thread: 14 - let's create a new webdriver
+Starting ChromeDriver 80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}) on port 2623
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1583315068.088][WARNING]: Timed out connecting to Chrome, retrying...
+мар. 04, 2020 11:44:30 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+мар. 04, 2020 11:44:30 AM com.codeborne.selenide.webdriver.BrowserResizer adjustBrowserSize
+INFO: Set browser size to 1366x768
+[1583315072.151][WARNING]: Timed out connecting to Chrome, retrying...
+мар. 04, 2020 11:44:34 AM com.codeborne.selenide.webdriver.WebDriverFactory logBrowserVersion
+INFO: BrowserName=chrome Version=80.0.3987.132 Platform=WINDOWS
+мар. 04, 2020 11:44:34 AM com.codeborne.selenide.webdriver.WebDriverFactory createWebDriver
+INFO: Selenide v. 5.4.1
+мар. 04, 2020 11:44:34 AM com.codeborne.selenide.webdriver.WebDriverFactory logSeleniumInfo
+INFO: Selenium WebDriver v. 3.141.59 build time: 2018-11-14T08:17:03
+мар. 04, 2020 11:44:34 AM com.codeborne.selenide.drivercommands.CreateDriverCommand createDriver
+INFO: Create webdriver in current thread 14: ChromeDriver -> ChromeDriver: chrome on WINDOWS (e0ed9e27c9763d49764ff25099af19d9)
+[1583315075.124][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583315075.236][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583315075.346][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583315075.659][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583315075.771][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583315075.876][SEVERE]: Timed out receiving message from renderer: 0.100
+мар. 04, 2020 11:44:36 AM com.codeborne.selenide.drivercommands.CloseDriverCommand run
+INFO: Close webdriver: 14 -> ChromeDriver: chrome on WINDOWS (e0ed9e27c9763d49764ff25099af19d9)
+мар. 04, 2020 11:44:36 AM com.codeborne.selenide.drivercommands.CloseBrowser run
+INFO: Trying to close the browser ChromeDriver ...
+мар. 04, 2020 11:44:37 AM com.codeborne.selenide.drivercommands.CloseDriverCommand run
+INFO: Closed webdriver 14 in 1173 ms
+мар. 04, 2020 11:44:37 AM com.codeborne.selenide.impl.WebDriverThreadLocalContainer getAndCheckWebDriver
+INFO: No webdriver is bound to current thread: 14 - let's create a new webdriver
+Starting ChromeDriver 80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}) on port 30693
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1583315081.050][WARNING]: Timed out connecting to Chrome, retrying...
+мар. 04, 2020 11:44:43 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+мар. 04, 2020 11:44:43 AM com.codeborne.selenide.webdriver.BrowserResizer adjustBrowserSize
+INFO: Set browser size to 1366x768
+[1583315085.145][WARNING]: Timed out connecting to Chrome, retrying...
+мар. 04, 2020 11:44:47 AM com.codeborne.selenide.webdriver.WebDriverFactory logBrowserVersion
+INFO: BrowserName=chrome Version=80.0.3987.132 Platform=WINDOWS
+мар. 04, 2020 11:44:47 AM com.codeborne.selenide.webdriver.WebDriverFactory createWebDriver
+INFO: Selenide v. 5.4.1
+мар. 04, 2020 11:44:47 AM com.codeborne.selenide.webdriver.WebDriverFactory logSeleniumInfo
+INFO: Selenium WebDriver v. 3.141.59 build time: 2018-11-14T08:17:03
+мар. 04, 2020 11:44:47 AM com.codeborne.selenide.drivercommands.CreateDriverCommand createDriver
+INFO: Create webdriver in current thread 14: ChromeDriver -> ChromeDriver: chrome on WINDOWS (279af3ed63a119246d83b13911975b93)
+[1583315088.099][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583315088.211][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583315088.320][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583315088.636][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583315088.747][SEVERE]: Timed out receiving message from renderer: 0.100
+мар. 04, 2020 11:44:50 AM com.codeborne.selenide.drivercommands.CloseDriverCommand run
+INFO: Close webdriver: 14 -> ChromeDriver: chrome on WINDOWS (279af3ed63a119246d83b13911975b93)
+мар. 04, 2020 11:44:50 AM com.codeborne.selenide.drivercommands.CloseBrowser run
+INFO: Trying to close the browser ChromeDriver ...
+мар. 04, 2020 11:44:51 AM com.codeborne.selenide.drivercommands.CloseDriverCommand run
+INFO: Closed webdriver 14 in 644 ms
+]]></system-err>
+</testsuite>

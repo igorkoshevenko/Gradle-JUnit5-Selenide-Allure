@@ -1,0 +1,81 @@
+{
+  "551a1672b6f83032a9a7655f8ac428cc" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6b166d5441314107",
+      "status" : "failed",
+      "statusDetails" : "Element should have text 'РќРµРІРµСЂРЅС‹Рµ РґР°РЅРЅС‹Рµ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ' {By.xpath: //div[contains(@class,'alert alert-error')]}\nElement: '<div class=\"alert alert-error\">Неверные данные пользователя (осталось 2 попытки)</div>'\nScreenshot: file:/C:/Users/dp020/IdeaProjects/qa_automation/build/reports/tests/1579635215385.1.png\nPage source: file:/C:/Users/dp020/IdeaProjects/qa_automation/build/reports/tests/1579635215385.1.html\nTimeout: 4 s.",
+      "time" : {
+        "start" : 1579635199907,
+        "stop" : 1579635216927,
+        "duration" : 17020
+      }
+    } ]
+  },
+  "7ba227034d3f6eee687574c8a7e6a08" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6e0d8b5c664ace9e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1579635165202,
+        "stop" : 1579635183156,
+        "duration" : 17954
+      }
+    } ]
+  },
+  "648f88dc7b00e4ce68e22d8514bce81" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d20eca2d930dfcd5",
+      "status" : "failed",
+      "statusDetails" : "Element should have text 'Р—Р°Р±С‹Р»Рё Р»РѕРіРёРЅ РёР»Рё РїР°СЂРѕР»СЊ?' {By.className: modal-content}\nElement: '<div class=\"modal-content\">×\nЗабыли логин или пароль?\nЕсли вы забыли логин или пароль Интернет-банка, для восстановления обратитесь в контактный центр по телефону в Санкт-Петербурге 8 /812/ 329 5050, в Москве 8 /495/ 228 3838 или в любой офис банка. Воспользуйтесь поиском, чтобы найти ближайший офис.\n\nЕсли Вы забыли логин и/или пароль для входа в корпоративный Интернет-банк i2B, обратитесь в Службу технической поддержки по телефону 8 /812/ 329 5939 в Санкт-Петербурге, 8 /800/ 500 5939 по России (звонок бесплатный) или в обслуживающее подразделение банка (необходимо предъявить документ, удостоверяющий личность).</div>'\nScreenshot: file:/C:/Users/dp020/IdeaProjects/qa_automation/build/reports/tests/1579635198329.0.png\nPage source: file:/C:/Users/dp020/IdeaProjects/qa_automation/build/reports/tests/1579635198329.0.html\nTimeout: 4 s.",
+      "time" : {
+        "start" : 1579635183357,
+        "stop" : 1579635199876,
+        "duration" : 16519
+      }
+    } ]
+  },
+  "56d97a5df2f99201b4207fc4862c3a26" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "257e6b9d60c26398",
+      "status" : "failed",
+      "statusDetails" : "Element should have text 'РќРµРІРµСЂРЅС‹Рµ РєРѕРґ' {By.xpath: //div[contains(@class,'alert alert-error')]}\nElement: '<div class=\"alert alert-error hidden\" data-key=\"invalidOtpCode\">Неверный код (осталась 1 попытка)</div>'\nScreenshot: file:/C:/Users/dp020/IdeaProjects/qa_automation/build/reports/tests/1579635232699.2.png\nPage source: file:/C:/Users/dp020/IdeaProjects/qa_automation/build/reports/tests/1579635232699.2.html\nTimeout: 4 s.",
+      "time" : {
+        "start" : 1579635216935,
+        "stop" : 1579635234226,
+        "duration" : 17291
+      }
+    } ]
+  }
+}

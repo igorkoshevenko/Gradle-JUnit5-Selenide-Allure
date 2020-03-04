@@ -1,0 +1,205 @@
+<html><head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Интернет банк - Банк Санкт-Петербург</title>
+  <meta name="description" content="Попробуйте наш интернет-банк! Открытие и закрытие счетов, заказ карт, подача заявки на кредит и оплата любых услуг онлайн">
+  <meta name="keywords" content="интернет банк,личный кабинет,интернет банк бспб,ibspb,бспб интернет">
+  <meta name="build" content="release-2020-01-background-check-service-integration.5">
+  <meta name="revision" content="f8d5faba1f">
+  <meta name="yandex-verification" content="7adccd2ab371840b">
+  <link rel="icon" type="image/x-icon" href="/public/images/favicon.ico">
+  <link rel="stylesheet" href="/public/gen/lib.css?f8d5faba1f" media="screen">
+  <link rel="stylesheet" href="/public/gen/auth.css?f8d5faba1f" media="screen">
+  <link rel="stylesheet" href="/public/fonts/icomoon/style.css?f8d5faba1f" media="screen">
+  <script async="" src="https://www.google-analytics.com/analytics.js"></script><script src="/public/gen/auth.js?f8d5faba1f"></script>
+
+
+  
+  
+</head>
+<body>
+  
+
+
+  
+
+<div class="container">
+  <img id="logo" src="/public/images/logo-bspb-ru.svg" alt="Интернет банк - Банк Санкт-Петербург">
+
+  <div id="login-container">
+    <span id="alerts-container">
+  
+
+  
+
+  <div class="yearly-identification-warning-container hidden"></div>
+
+  
+
+  
+
+  
+    <div class="alert alert-error">
+      Неверные данные пользователя (осталось 2 попытки)
+      
+      
+    </div>
+  
+
+  
+  
+  <div id="global-alerts-container">
+    
+
+
+    <script>
+      function removeFieldErrorsFromGlobal(context){
+        var globalErrors = $('#global-alerts-container .alert-error', context);
+        $('form .hasError:visible [name], form .error:visible [name]', context).each(function() {
+          globalErrors.filter("[data-key='" + this.name + "']").remove();
+        });
+        globalErrors.show();
+      }
+
+      
+      
+        $(function() {
+          setTimeout(function(){
+            removeFieldErrorsFromGlobal($('body'));
+          }, 100);
+        });
+      
+    </script>
+  </div>
+
+  
+
+<div id="page-alerts-container">
+  
+</div>
+</span>
+    
+
+  
+  
+
+
+<form action="/auth/login" method="post" id="login-form">
+  <input type="hidden" name="securityToken" value="05d758cc-fea6-40a2-91c0-47eb5dba095a">
+  <input type="hidden" name="kasperskySessionId">
+  <div class="form-control">
+    <input name="username" tabindex="1" type="text" placeholder="Логин" autocomplete="off" autofocus="" value="demo">
+  </div>
+  <div class="form-control">
+    <input name="password" tabindex="2" type="password" placeholder="Пароль" autocomplete="off" value="demo">
+    <svg class="eye-icon" viewBox="0 0 24 24">
+      <path d="M12 8c-5 0-11 6-11 6s6 6 11 6 11-6 11-6-6-6-11-6zm0 10c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4z"></path>
+      <circle cx="12" cy="14" r="2"></circle>
+    </svg>
+  </div>
+
+  <div class="login-button-home">
+    <button id="login-button" tabindex="3" class="btn btn-primary">Войти</button>
+  </div>
+
+  
+  
+    <div id="reset-password-dialog" class="modal fade" style="display: none" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a class="close" data-dismiss="modal">×</a>
+        <h3>Забыли логин или пароль?</h3>
+      </div>
+      <div class="modal-body" style="text-align: center; margin: 40px 10px;">
+      Если вы забыли логин или пароль <b>Интернет-банка</b>, для восстановления обратитесь в контактный центр по телефону в Санкт-Петербурге <b style="white-space:nowrap">8 /812/ 329 5050</b>, в Москве <b style="white-space:nowrap">8 /495/ 228 3838</b> или в любой офис банка. Воспользуйтесь  <a href="http://www.bspb.ru/map" target="_blank">поиском,</a> чтобы найти ближайший офис.<br><br>Если Вы забыли логин и/или пароль  для входа в <b>корпоративный <nobr>Интернет-банк</nobr> i2B</b>, обратитесь в Службу технической поддержки по телефону <b style="white-space:nowrap">8 /812/ 329 5939</b> в Санкт-Петербурге, <b style="white-space:nowrap">8 /800/ 500 5939</b> по России (звонок бесплатный) или в обслуживающее подразделение банка (необходимо предъявить документ, удостоверяющий личность).
+      </div>
+    </div>
+  </div>
+</div>
+    <a class="chevron" data-toggle="modal" data-target="#reset-password-dialog" style="cursor: pointer;">
+      Восстановить доступ
+    </a>
+  
+
+
+  <div class="secondary-links">
+    <a class="chevron locale inline-block" href="/locale/en">In English</a>
+    
+
+    <a class="chevron inline-block" href="https://www.bspb.ru/retail/ibank/" target="_blank">Об Интернет-банке</a>
+    
+  </div>
+
+</form>
+
+<script>
+  var isInIframe = window.parent !== window;
+  if (isInIframe) window.parent.postMessage('auth:login', '*');
+
+  
+
+  function LoginForm(e){function n(n){$.get(e.prefetchUrl,{username:n.target.value},function(){$(".disabled-on-submit",o).removeClass("disabled-on-submit")})}e=e||{};var t=this,o="#login-form",a=$("[name=username]",o),s=$("[name=password]",o),u=$(".eye-icon",o);t.init=function(){e.prefetchUrl&&a.on("change",n),u.on("touchstart mousedown",function(){s.attr("type","text")}).on("touchend mouseup mouseleave",function(){s.attr("type","password")})}}
+  new LoginForm({prefetchUrl: 'https:\/\/idemo.bspb.ru\/login\/prefetch'}).init();
+
+  
+    if ('#corporate' == location.hash) {
+      $("#login-container input[name='username']").val('multicustomer');
+      $("#login-container input[name='password']").val('secret');
+    }
+  
+</script>
+
+  </div>
+</div>
+
+
+
+  <div id="security-info">
+    <div class="item"><img src="/public/images/login/recommendation-1.png">
+      <h4>Безопасное соединение</h4>
+      <div class="muted">Всегда используйте зашифрованное соединение. Убедитесь в том, что сертификат в адресной строке с названием Bank Saint Petersburg зеленого цвета.</div>
+    </div>
+    <div class="item"><img src="/public/images/login/recommendation-2.png">
+      <h4>Всегда выходите из системы</h4>
+      <div class="muted">Выход из системы препятствует доступу других пользователей к вашим счетам.</div>
+    </div>
+    <div class="item"><img src="/public/images/login/recommendation-3.png">
+      <h4>Не сообщайте никому свои пароли</h4>
+      <div class="muted">Пароль вводите только на этой странице. Банк никогда не просит вводить пароль через другие каналы.</div>
+    </div>
+  </div>
+
+  <div id="footer">
+    <div class="copyright">© 1990 – 2020 ПАО «Банк «Санкт-Петербург»</div>
+    <div class="license">Генеральная лицензия Банка России на совершение банковских операций №436 от 31.12.2014</div>
+  </div>
+
+
+
+
+<script>
+  $(function() {
+    new DoubleClickPreventer().init();
+  })
+</script>
+  
+  
+<script>
+  
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-31858768-3', 'auto');
+
+    
+    
+
+    ga('send', 'pageview');
+  
+  
+</script>
+  
+
+</body></html>
