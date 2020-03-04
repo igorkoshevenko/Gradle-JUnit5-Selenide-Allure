@@ -64,6 +64,4 @@ public class LoginTest extends BaseTestClass {
         loginPage.restoreAccessModalWindow().shouldHave(Condition.text(FORGOT_USERNAME_OR_PASSWORD));
     }
 
-//    @ParameterizedTest
-//    @ValueSource(strings = { "cali", "bali", "dani" })
 }
